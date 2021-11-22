@@ -19,11 +19,10 @@ body {
     justify-content: center;
 
     font-family: system-ui, sans-serif;
-}
-
-body > div {
+    
     width: 20rem;
 }
+
 
 
 /* https://meta.stackexchange.com/questions/1939/kbd-elements-are-way-too-intrusive/2049#2049 */
