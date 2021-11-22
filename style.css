@@ -18,8 +18,10 @@ body {
     min-height: 100vh;
     justify-content: center;
 
-    font-family: system-ui, sans-serif;
-    
+    font-family: system-ui, sans-serif;    
+}
+
+body > div {
     width: 500px;
 }
 
