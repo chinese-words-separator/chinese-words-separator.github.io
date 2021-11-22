@@ -18,9 +18,11 @@ body {
     min-height: 100vh;
     justify-content: center;
 
-    font-family: system-ui, sans-serif;
-    
-    padding: 0 10px;
+    font-family: system-ui, sans-serif;   
+}
+
+body > div {
+    margin: 0 10px;
 }
 
 
