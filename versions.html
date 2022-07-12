@@ -1,6 +1,186 @@
 <div style="width: 80vw">
 
 <pre style='white-space: pre-wrap'>
+8.24.84.0:
+UPDATE: Removed 12 seconds limitation of text-to-speech, browser can now handle more than 15 seconds
+UPDATE: Improved segmentation of multi-words
+FIX: Dictionary was not showing in Options screen. It's showing now
+
+8.24.83.1: FIX: Made the color of pipe symbol lighter to prevent blending with words as letter l
+
+8.24.83.0: UPDATE: Improved segmentation of proper nouns
+
+8.24.82.0: NEW: Dictionary, when using one line definition, there's an indicator in pinyin if the hanzi character/word have two or more meanings/pronunciations
+
+8.24.81.2: FIX: Dictionary, word dictionary can't process some characters, e.g., 𬬻. Now it can
+
+8.24.81.1: FIX: Dictionary, corrected repositioning and resizing logic
+
+8.24.81.0: NEW: Dictionary, can now be configured to display just one line definition for each word. Because 和 have too many definitions, that's all :-)
+
+Nope not just that, language learners can also use this functionality to zip through the sentences they are reading or if the learner's vocabulary level is advanced enough. One line definition can also be activated by selecting the Advanced level
+
+8.24.80.0: NEW: If an external dictionary site (or sentence mining site) comes with its own pinyin annotations and definitions, the language learner may want to disable CWS on the specific pages of those sites
+
+To do so, just add #no-cws on the URL of those pages in *further lookup site* and *sentence mining site* of CWS's Options screen, e.g., 
+
+https://dict.leo.org/chinesisch-deutsch/%s#no-cws
+
+https://www.chineseboost.com/chinese-example-sentences#no-cws
+
+FIX: Corrected copy to clipboard
+FIX: Corrected some mobile functionalities that were not working properly
+
+8.24.79.0: UPDATE: Dictionary, new words
+
+8.24.78.0: NEW: Dictionary, show definitions for manually highlighted text. Works on both sentence dictionary and word dictionary. Especially useful on mobile devices in which the link's meaning can't be hovered on using tapping, a site will just transfer to another page when links are tapped. This new functionality enables language learner to manually highlight the link's text first so then the language learner can see the link's meaning before tapping the link
+
+8.24.77.0: UPDATE: Dictionary, new words
+
+8.24.76.1: FIX: Corrected split override for segmentations, so that CWS can still box garden-path words
+
+8.24.76.0: UPDATE: For single character word with multiple meanings, the typical meaning is shown first
+
+8.24.75.2: FIX: Corrected erhua pinyin contraction, e.g., yǒu yǎnlì jiàn r, should be: yǒu yǎnlì jiànr
+
+8.24.75.1:
+FIX: Corrected sorting
+FIX: Pinyin on page was not showing the usual pronunciation of a word, e.g., 吗 was showing as má instead of ma. This is fixed now, 吗 is now showing on page as ma
+
+8.24.75.0: UPDATE: Dictionary, improved sorting. Relevant definitions first
+
+8.24.74.1: FIX: Calligraphy printer was not working. Fixed
+
+8.24.74.0:
+UPDATE: Improved segmentations
+FIX: Auto-translate for Bing kept reloading the translation sidebar even if mouse is hovered on same sentence. This is fixed now
+FIX: Auto-translate for DeepL kept reloading the translation tab even if the DeepL's tab is already closed. This is fixed now
+
+8.24.73.0:
+NEW: Copy selected text as simplified or traditional
+UPDATE: Dictionary, new words
+
+8.24.72.0: NEW: Language learners can now add their own segmentation overrides
+
+8.24.71.0: UPDATE: Optimized the re-segmenter of wrong segmentations
+
+8.24.70.0: UPDATE: Improved segmentations for 站在, e.g., 地铁站在哪里 is not segmented as 地铁 站在 哪里 anymore; it's segmented as 地铁站 在 哪里 instead
+
+8.24.69.0:
+UPDATE: Sentence dictionary is now more responsive when hovering across sentence/phrase
+FIX: Corrected segmentations of erhua
+FIX: Character dictionary was leaving multiple pop-ups. Fixed now
+FIX: Premature notification while the character is being expanded. Fixed now
+
+8.24.68.0:
+UPDATE: Improved segmentations
+FIX: Marked learned words with multiple definitions were not visually marked when page is reloaded. This is fixed now
+
+8.24.67.0:
+NEW: Character dictionary, the strokes count is now indicated
+UPDATE: Dictionary, new words
+FIX: Corrected the bottom margin of Page HSK percentages
+FIX: Corrected character expansions, i.e., 鱼 should not be expanded to 𠂊田一. 鱼 is not a compound character, 鱼 is a base character. Graphical expansion is not used when there is available semantic expansion
+
+8.24.66.0:
+NEW: Tapping the calligraphy animation stops/resumes it
+UPDATE: On mobile devices, pop-up dictionary now repositions from bottom to top when there is little space at the bottom
+UPDATE: Improved segmentations
+FIX: Pop-up character dictionary was flickering when repositioning it from bottom to top. Fixed now, no more flickering
+
+8.24.65.0:
+UPDATE: Dictionary, new words
+FIX: Notification was not working on succeeding right-clicks on base character. Working now
+
+8.24.64.0:
+UPDATE: Dictionary, new words
+FIX: Crashing problem occurred when tag-less word dictionary mode is used when unified unicodes was set to enabled. This is fixed now, no more crashing
+
+8.24.63.0: 
+UPDATE: Improved segmentations
+FIX: Corrected comma spacing in idioms
+
+8.24.62.0: NEW: A character can now be expanded to its component characters, e.g., 好 is expanded as 女 and 子
+
+8.24.61.0:
+UPDATE: Improved expansion of words, e.g., 帮个忙 is expanded as 帮忙 and 个
+UPDATE: Animation for word expansions
+FIX: Corrected resizing of pop-up dictionary's height to make expanded words viewable
+
+8.24.60.1: FIX: Corrected segmentations
+
+8.24.60.0: UPDATE: Improved expansion of words, e.g., 不清楚 is expanded as 不清 and 楚, and 不 and 清楚
+
+8.24.59.0:
+UPDATE: Improved expansion of word, e.g., 掰不开 is expanded as 掰开 and 不, instead of 掰 and 不 and 开; 找不到 is expanded as 找到 and 不, instead of 找 and 不到
+UPDATE: Improved segmentation
+
+
+8.24.58.0:
+NEW: Keyboard shortcut 'e' to unhide English definitions that were hidden by Chinese immersion mode, especially useful when used in conjunction with keyboard shortcut 'a' (advance to next word)
+UPDATE: Made the default tone-based colors eye-friendly on both dark and light backgrounds
+
+8.24.57.1: FIX: Made unified unicodes work on tag-less word dictionary
+
+8.24.57.0: Improved segmentation and separation
+
+8.24.56.0:
+UPDATE: Dictionary, right-clicking phrase now separates by word instead of by character
+UPDATE: Dictionary, new words
+FIX: Corrected tones on page for words with mix Chinese and numbers, e.g., 美国51区
+
+8.24.55.1: FIX: Corrected the logic of variants filter
+
+8.24.55.0:
+NEW: Right-clicking (long press on mobile devices) the pinyin/zhuyin plays the sound in different voice
+FIX: Corrected Dictionary HSK wrong alignment
+
+8.24.54.0: 
+NEW: Idioms with commas are now showing on sentence dictionary
+UPDATE: Dictionary, new words
+FIX: Backward-slanting comma is not used for segmenting phrases anymore. Backward-slanting comma is mostly used for itemizations
+
+
+8.24.53.0: NEW: See word's HSK level beside dictionary's hanzi
+
+8.24.52.0: UPDATE: Improved segmentation. e.g., 有意义 was segmenting as yǒuyì yì, now it's segmenting as yǒu yìyì
+
+8.24.51.0:
+UPDATE: Dictionary, new words
+FIX: Corrected dictionary sorting
+
+8.24.50.0:
+UPDATE: Dictionary, new words
+FIX: Corrected pop-up dictionary repositioning logic
+
+8.24.49.0:
+NEW: Can now view the definition of Chinese words in definitions
+FIX: Corrected pop-up dictionary repositioning logic
+
+8.24.48.0: 
+NEW: Can now view the compound word's subwords
+UPDATE: Dictionary, new words
+
+8.24.47.1: FIX: Corrected dictionary icons
+
+8.24.47.0:
+UPDATE: Dictionary, new words
+FIX: UI alignments
+
+8.24.46.0: UPDATE: Dictionary, new words
+
+8.24.45.2: FIX: Corrected mobile browser detection
+
+8.24.45.1: FIX: When clicking or tapping the pinyin or zhuyin in the dictionary, some words were not pronounced correctly. This is fixed now. Note: Android's text-to-speech has limitation, words with multiple pronunciations has one pronunciation only, e.g., 会 (huì, kuài) is just pronounced huì
+
+8.24.45.0: UPDATE: Improved segmentation of phrases and idioms
+
+8.24.44.1: FIX: Word dictionary keeps on finding Chinese words even if the word is not viewable by the user. This is fixed now
+
+8.24.44.0:
+UPDATE: When the compound word have both traditional and simplified, the character(s) that are different are emphasized (dark gray), while the similar character(s) are de-emphasized (light gray)
+UPDATE: Calligraphy printer, compound words have one more set of row (11 boxes) that can be practiced on
+
 8.24.43.0:
 NEW: Calligraphy printer can now print compound words
 UPDATE: Calligraphy printer now remembers the last printed text
@@ -19,7 +199,7 @@ UPDATE: Dictionary, new words
 
 8.24.40.1:
 FIX: The advance to next word (default keyboard shortcut 'a') functionality was not fully working across paragraphs. It's fully working now
-FIX: Closing the sidebar was not turning off the automatic Bing translation. Fixed now
+FIX: Closing the sidebar turns off the automatic Bing translation
 FIX: Scrolling in *Read from sources other than web or offline* was not removing the dictionary. This is fixed now, dictionary is removed whenever the page is scrolled
 
 8.24.40.0: 
