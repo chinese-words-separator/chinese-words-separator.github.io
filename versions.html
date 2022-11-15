@@ -1,9 +1,10 @@
 <div style="width: 80vw">
 
 <pre style='white-space: pre-wrap'>
-8.24.84.x:
+8.24.84.820:
 UPDATE: Detects more garden-path
 FIX: Opacity should effect on video's English annotation too
+FIX: Duplicate definitions should not be shown when not showing both traditional and simplified
 
 8.24.84.810: NEW: Opacity setting for guide (pinyin, zhuyin, etc.)
 
@@ -145,341 +146,6 @@ UPDATE: Video dictionary, rewinding dialogues is now supported on YouTube, Viki,
 UPDATE: More separable verbs
 
 8.24.84.550:
-UPDATE: Dictionary: new words
-UPDATE: When only either traditional or simplified is configured to be shown, redundant pinyin-definition pairs are not shown, e.g., 了解
-
-8.24.84.540:
-UPDATE: Dictionary: new words
-OPTIMIZATION: Prevent loading a file twice
-FIX: Browser auto-translate notification was not working on video sites if hoverless video dictionary sidebar is not activated. This is fixed now
-
-8.24.84.530:
-UPDATE: Reloading the page when effecting pinyin/size/colors from tag-less mode in hoverless video dictionary, is not required anymore
-FIX: Showing marked learned words in Youdao's further lookup was not working. This is fixed now
-    
-8.24.84.520:
-UPDATE: Notification is now working in fullscreen mode
-UPDATE: Word (two or more characters) that have no definition, now just automatically shows all of its characters' definitions
-
-8.24.84.510:
-NEW: Video speed adjustment. If you can learn it slow, you can learn it fast
-UPDATE: Can now use the dictionary on native dropdown
-FIX: Read-aloud should not function in Recall
-
-8.24.84.500:
-OPTIMIZATION: Prevents calling read-aloud twice
-UPDATE: Allow marking learned on Recall and Rewrite
-FIX: Duplicate notifications was showing in iQIYI. This is fixed now
-
-8.24.84.490: NEW: Browser auto-translate on notification. This can be activated by right-clicking the dictionary's Google Translator icon. After activating the auto-translate, right-click the page and choose Translate to English. Auto-translating notifications can be used on hoverless video dictionary too
-
-8.24.84.481: FIX: Rotating colors was appearing on Rewrite. This is fixed now
-
-8.24.84.480:
-UPDATE: Video subtitle, improved subtitle's English annotations
-UPDATE: Rewrite, dictionary can now be used on each character
-UPDATE: Dictionary, cleaned up superfluous expressions so that more words can be identified to their HSK level
-UPDATE: Dictionary: new words
-
-8.24.84.470:
-NEW: Practice writing Chinese characters in Rewrite
-UPDATE: Improved English annotation
-
-8.24.84.460:
-UPDATE: Separable verb-object where the object comes before the verb is now recognized too, e.g., 这个忙我帮定了. 忙(máng, object) comes before 帮(bāng, verb)
-UPDATE: Cleaned up superfluous expressions so that more words can be identified to their HSK level
-
-8.24.84.450:
-UPDATE: Dictionary: new words
-FIX: YouTube: corrected centering of subtitles on Default view, subtitles does not get cropped anymore
-FIX: iQIYI: multiple subtitles now appears on automatic video dictionary's sidebar
-FIX: iQIYI: subtitle's width is too narrow, causing the subtitle to become multi-lines. This is fixed now, longer subtitle can now fit in one line
-FIX: iQIYI: Font Edges of Default and Border are not aligned to actual subtitles. For the meantime, disable the Font Edges of Default and Border while iQIYI is not yet making these two Font Edges be aligned to actual subtitles
-FIX: Garden-path words from three syllables should be detected. This is fixed now
-FIX: Dictionary: Was showing null. This is fixed now
-
-8.24.84.440:
-UPDATE: Added option in automatic video dictionary for enabling/disabling auto-pause
-FIX: Mouse have to be re-moved sometimes so that CWS can detect the words, this is fixed now; re-moving the mouse is no longer required
-
-8.24.84.430: UPDATE: Improved segmentation so that words' HSK level can be identified
-
-8.24.84.420:
-UPDATE: Automatic video dictionary is now supported on iQIYI
-UPDATE: Word is read aloud when pinyin/zhuyin is clicked/tapped on Recall
-UPDATE: Dictionary: new words
-FIX: iQIYI, pop-up dictionary now works even if the video is in fullscreen mode
-
-8.24.84.411: FIX: Corrected parenthesis parser for English annotation
-
-8.24.84.410:
-UPDATE: Improved English annotation to subtitles
-FIX: Corrected garden-path detection in subtitles
-
-8.24.84.402:
-FIX: On DeepL, the Chinese input should not be pinyinized when clicking the English translation. This is fixed now
-FIX: HSK level 7 was not included in sentence/phrase's metadata. It's included now
-FIX: Made Options screen adjust to the device's size
-FIX: Character dictionary was leaving behind multiple pop-up dictionaries when the mouse is being moved fast. This is fixed now
-
-8.24.84.401: FIX: Setting maximum height for the dictionary was not effecting on inline sentence dictionary. This is fixed now
-
-8.24.84.400:
-UPDATE: Dictionary: new words
-UPDATE: Adapt automatic video dictionary to smaller screen, e.g., m.youtube.com and WeTV
-FIX: Closing the video sidebar should not remove the English annotation
-FIX: Changing Recall's romanization between pinyin and ㄓㄨˋㄧㄣ/bopomofo should not refresh the list
-
-8.24.84.301: FIX: Immersion weaknesses was not showing in Options screen. This is fixed now
-
-8.24.84.300: UPDATE: Can now choose between pinyin and zhuyin in Recall
-
-8.24.84.290:
-UPDATE: Can now set to include/exclude traditional on Recall
-UPDATE: Page, more separable verbs that can be detected
-UPDATE: Dictionary: new words
-FIX: Some subtitles carry over to next subtitles. This is fixed now
-
-8.24.84.280:
-NEW: Dictionary, link to vocabulary notes from AllSet Learning's Chinese Vocabulary Wiki. This can be changed in Options screen
-FIX: Should jump to video link's timestamp even if the video dictionary sidebar is not loaded
-FIX: Corrected definition delimiters
-
-8.24.84.270:
-UPDATE: Optimized text replacement
-UPDATE: Sentence/phrase's average HSK level is shown in the video dictionary's sidebar
-FIX: Corrected HSK percentage computation
-
-8.24.84.260:
-UPDATE: Dictionary: new words
-FIX: Removed dangling semicolons in the dictionary
-FIX: Corrected the '+' in DeepL, made it space ' '
-
-8.24.84.250:
-UPDATE: English annotation now appears in the subtitles by default. This can be changed in the video dictionary's sidebar
-UPDATE: English annotation now appears under the subtitle's hanzi by default, so the language learner will focus first on hanzi and pinyin. This can be changed in the video dictionary's sidebar
-UPDATE: Improved garden-path detection
-FIX: Corrected separable verb's bracket in the dictionary
-
-8.24.84.240: UPDATE: Automatic video dictionary now works on WeTV too
-
-8.24.84.232: FIX: Corrected garden-path's separation
-
-8.24.84.231: FIX: Corrected dictionary location when hovering the mouse cursor in the textbox's placeholder
-
-8.24.84.230:
-UPDATE: Improved garden-path correction, e.g., 和面膜 is not separated as 和面 膜 anymore, it's now separated as 和 面膜; 把手机关 is not separated as 把手 机关 anymore, it's now separated as 把 手机 关
-UPDATE: Recognizes more separable verbs
-
-8.24.84.220:
-UPDATE: Optimized processing of separable verbs
-FIX: Netflix's English annotations was flickering. Fixed now, no more flickering
-
-8.24.84.210:
-NEW: Separable verbs are shown in brackets. Can be changed in Options screen
-UPDATE: Optimized tone annotations
-
-8.24.84.201:
-FIX: Make the queued hanzi in Recall functionality to appear first before resetting the action button to *I knew this*
-FIX: Corrected dictionary location when highlighting text from text boxes
-FIX: Don't show dictionary when the sidebar of hoverless video dictionary is not visible
-
-8.24.84.200: NEW: ☀️ Recall. Practice recalling words and phrases with Recall functionality
-
-8.24.84.190:
-UPDATE: Video now auto-pause/resume upon hovering the mouse cursor in/out of the dictionary
-FIX: CWS icon should not be shown when navigating the unlearned and page's HSK percentages
-
-8.24.84.180:
-UPDATE: Video dictionary's height is now set to maximum. Watch more, hover less
-UPDATE: Dictionary can now be set to use maximum height, can set this in Options screen
-FIX: Bing translator should be shown as pop-up window (instead of sidebar) when video dictionary is active
-
-8.24.84.172:
-FIX: YouTube video preview should not occupy the whole screen
-FIX: YouTube subtitle should not have a wide translucent background
-
-8.24.84.171:
-FIX: When video dictionary is activated twice, it was clearing the settings on the sidebar. Fixed now
-FIX: CWS was not effecting on some sites. Fixed now
-
-8.24.84.170:
-UPDATE: Improved segmentation and subtitle
-FIX: Two line subtitles in YouTube, only the second one was showing on video dictionary. This is working now, all subtitles are now showing on video dictionary
-
-8.24.84.162: FIX: Word wrap was not working for YouTube on longer subtitles. It's working now
-
-8.24.84.161:
-FIX: Automatic video dictionary for YouTube was showing even when on fullscreen, should not be shown when on fullscreen
-FIX: Definition should not be scrolled into view when the active dictionary is sentence inline
-
-8.24.84.160:
-NEW: Automatic video dictionary for Viki
-UPDATE: Improved segmentation
-
-8.24.84.150:
-NEW: Automatic dictionary for Netflix now works on YouTube too 
-UPDATE: Improved English annotation for Netflix
-
-8.24.84.140:
-UPDATE: Improved the algorithm of segmentation
-UPDATE: Overriding segmentations will prompt for confirmation first
-FIX: English annotation for Netflix should follow the Guide's font on Options screen
-
-8.24.84.130:
-NEW: It's now easier to add segmentation overrides, it can now be done on the page itself. Just right-click the word(s) and select the needed segmentation to override
-UPDATE: Dictionary: new words
-FIX: English annotation on Netflix displayed asterisk due to incorrect loading of conversion (traditional <-> simplified) list. This is fixed now
-
-8.24.84.120:
-NEW: Functionality to save Netflix's subtitle (and time) to learning tracking sheet
-UPDATE: Can now hide Netflix English words annotation by setting the English words' length limitation to zero
-
-8.24.84.110:
-NEW: Netflix-embedded CWS dictionary
-NEW: Dictionary: new words
-FIX: Dictionary for word, the pop-up dictionary should cover the page's pinyin so as to prevent cross-remembering other words' pinyin when focusing on one word/phrase. This is fixed now
-
-8.24.84.101: FIX: Pop-up dictionary was covering the pinyin annotations when text is manually selected. This is fixed now
-
-8.24.84.100:
-NEW: Can now save multiple offline reading
-UPDATE: Optimized text replacer of Traditional <-> Simplified converter
-
-8.24.84.0:
-UPDATE: Removed 12 seconds limitation of text-to-speech, browser can now handle more than 15 seconds
-UPDATE: Improved segmentation of multi-words
-FIX: Dictionary was not showing in Options screen. It's showing now
-
-8.24.83.1: FIX: Made the color of pipe symbol lighter to prevent blending with words as letter l
-
-8.24.83.0: UPDATE: Improved segmentation of proper nouns
-
-8.24.82.0: NEW: Dictionary, when using one line definition, there's an indicator in pinyin if the hanzi character/word have two or more meanings/pronunciations
-
-8.24.81.2: FIX: Dictionary, word dictionary can't process some characters, e.g., 𬬻. Now it can
-
-8.24.81.1: FIX: Dictionary, corrected repositioning and resizing logic
-
-8.24.81.0: NEW: Dictionary, can now be configured to display just one line definition for each word. Because 和 have too many definitions, that's all :-)
-
-Nope not just that, language learners can also use this functionality to zip through the sentences they are reading or if the learner's vocabulary level is advanced enough. One line definition can also be activated by selecting the Advanced level
-
-8.24.80.0: NEW: If an external dictionary site (or sentence mining site) comes with its own pinyin annotations and definitions, the language learner may want to disable CWS on the specific pages of those sites
-
-To do so, just add #no-cws on the URL of those pages in *further lookup site* and *sentence mining site* of CWS's Options screen, e.g., 
-
-https://dict.leo.org/chinesisch-deutsch/%s#no-cws
-
-https://www.chineseboost.com/chinese-example-sentences#no-cws
-
-FIX: Corrected copy to clipboard
-FIX: Corrected some mobile functionalities that were not working properly
-
-8.24.79.0: UPDATE: Dictionary: new words
-
-8.24.78.0: NEW: Dictionary, show definitions for manually highlighted text. Works on both sentence dictionary and word dictionary. Especially useful on mobile devices in which the link's meaning can't be hovered on using tapping, a site will just transfer to another page when links are tapped. This new functionality enables language learner to manually highlight the link's text first so then the language learner can see the link's meaning before tapping the link
-
-8.24.77.0: UPDATE: Dictionary: new words
-
-8.24.76.1: FIX: Corrected split override for segmentations, so that CWS can still box garden-path words
-
-8.24.76.0: UPDATE: For single character word with multiple meanings, the typical meaning is shown first
-
-8.24.75.2: FIX: Corrected erhua pinyin contraction, e.g., yǒu yǎnlì jiàn r, should be: yǒu yǎnlì jiànr
-
-8.24.75.1:
-FIX: Corrected sorting
-FIX: Pinyin on page was not showing the usual pronunciation of a word, e.g., 吗 was showing as má instead of ma. This is fixed now, 吗 is now showing on page as ma
-
-8.24.75.0: UPDATE: Dictionary, improved sorting. Relevant definitions first
-
-8.24.74.1: FIX: Calligraphy printer was not working. Fixed
-
-8.24.74.0:
-UPDATE: Improved segmentations
-FIX: Auto-translate for Bing kept reloading the translation sidebar even if mouse is hovered on same sentence. This is fixed now
-FIX: Auto-translate for DeepL kept reloading the translation tab even if the DeepL's tab is already closed. This is fixed now
-
-8.24.73.0:
-NEW: Copy selected text as simplified or traditional
-UPDATE: Dictionary: new words
-
-8.24.72.0: NEW: Language learners can now add their own segmentation overrides
-
-8.24.71.0: UPDATE: Optimized the re-segmenter of wrong segmentations
-
-8.24.70.0: UPDATE: Improved segmentations for 站在, e.g., 地铁站在哪里 is not segmented as 地铁 站在 哪里 anymore; it's segmented as 地铁站 在 哪里 instead
-
-8.24.69.0:
-UPDATE: Sentence dictionary is now more responsive when hovering across sentence/phrase
-FIX: Corrected segmentations of erhua
-FIX: Character dictionary was leaving multiple pop-ups. Fixed now
-FIX: Premature notification while the character is being expanded. Fixed now
-
-8.24.68.0:
-UPDATE: Improved segmentations
-FIX: Marked learned words with multiple definitions were not visually marked when page is reloaded. This is fixed now
-
-8.24.67.0:
-NEW: Character dictionary, the strokes count is now indicated
-UPDATE: Dictionary: new words
-FIX: Corrected the bottom margin of Page HSK percentages
-FIX: Corrected character expansions, i.e., 鱼 should not be expanded to 𠂊田一. 鱼 is not a compound character, 鱼 is a base character. Graphical expansion is not used when there is available semantic expansion
-
-8.24.66.0:
-NEW: Tapping the calligraphy animation stops/resumes it
-UPDATE: On mobile devices, pop-up dictionary now repositions from bottom to top when there is little space at the bottom
-UPDATE: Improved segmentations
-FIX: Pop-up character dictionary was flickering when repositioning it from bottom to top. Fixed now, no more flickering
-
-8.24.65.0:
-UPDATE: Dictionary: new words
-FIX: Notification was not working on succeeding right-clicks on base character. Working now
-
-8.24.64.0:
-UPDATE: Dictionary: new words
-FIX: Crashing problem occurred when tag-less word dictionary mode is used when unified unicodes was set to enabled. This is fixed now, no more crashing
-
-8.24.63.0: 
-UPDATE: Improved segmentations
-FIX: Corrected comma spacing in idioms
-
-8.24.62.0: NEW: A character can now be expanded to its component characters, e.g., 好 is expanded as 女 and 子
-
-8.24.61.0:
-UPDATE: Improved expansion of words, e.g., 帮个忙 is expanded as 帮忙 and 个
-UPDATE: Animation for word expansions
-FIX: Corrected resizing of pop-up dictionary's height to make expanded words viewable
-
-8.24.60.1: FIX: Corrected segmentations
-
-8.24.60.0: UPDATE: Improved expansion of words, e.g., 不清楚 is expanded as 不清 and 楚, and 不 and 清楚
-
-8.24.59.0:
-UPDATE: Improved expansion of word, e.g., 掰不开 is expanded as 掰开 and 不, instead of 掰 and 不 and 开; 找不到 is expanded as 找到 and 不, instead of 找 and 不到
-UPDATE: Improved segmentation
-
-8.24.58.0:
-NEW: Keyboard shortcut 'e' to unhide English definitions that were hidden by Chinese immersion mode, especially useful when used in conjunction with keyboard shortcut 'a' (advance to next word)
-UPDATE: Made the default tone-based colors eye-friendly on both dark and light backgrounds
-
-8.24.57.1: FIX: Made unified unicodes work on tag-less word dictionary
-
-8.24.84.570:
-UPDATE: Dictionary, three syllables garden-paths are now detected and shown
-UPDATE: Dictionary, Chinese slangs with no Chinese characters are now shown, e.g.,
-TA - he or she
-word - my (Internet slang variant of 我的[wo3 de5])
-w - (Internet slang) ten thousand (abbr. for 萬|万[wan4])
-ins - Instagram
-Q - cute (loanword)
-
-8.24.84.560:
-UPDATE: Video dictionary, rewinding dialogues is now supported on YouTube, Viki, WeTV, iQIYI
-UPDATE: More separable verbs
-
-8.24.84.550:
 UPDATE: Dictionary, new words
 UPDATE: When only either traditional or simplified is configured to be shown, redundant pinyin-definition pairs are not shown, e.g., 了解
 
@@ -491,7 +157,7 @@ FIX: Browser auto-translate notification was not working on video sites if hover
 8.24.84.530:
 UPDATE: Reloading the page when effecting pinyin/size/colors from tag-less mode in hoverless video dictionary, is not required anymore
 FIX: Showing marked learned words in Youdao's further lookup was not working. This is fixed now
-    
+ 
 8.24.84.520:
 UPDATE: Notification is now working in fullscreen mode
 UPDATE: Word (two or more characters) that have no definition, now just automatically shows all of its characters' definitions
@@ -1319,7 +985,7 @@ Example:
 电脑 dian4 nao3
 
 If the learner did not add any tones:
-    
+ 
 dian nao
 
 the verification will be non-strict. The clicked 电脑 will be marked as learned.
@@ -1539,8 +1205,8 @@ NEW: Speaker emoji for read aloud in Chinese words separator's context menu
 NEW: Read aloud for right-clicked or highlighted text. After highlighting and right-clicking the text, select Chinese words separator > Read aloud "东西..."
 NEW: When there are two (or more) consecutive garden-path, they are enclosed in their own box
 UPDATE:
-    * Improved garden-path criteria
-    * improved line spacing
+ * Improved garden-path criteria
+ * improved line spacing
 NEW: Speaker emoji for read aloud in Chinese words separator's context menu 
 FIX: Corrected reactivation of dictionary when using keyboard shortcut
 
