@@ -1,6 +1,23 @@
 <div style="width: 80vw">
 
 <pre style='white-space: pre-wrap'>
+8.24.84.990:
+UPDATE: Clipboard, copy as pinyin/zhuyin functionality now translate some words phonetically based on context, e.g., the 行 in 准备100行数据的表结构 has háng as pinyin, while the 行 in 行吧 has xíng as pinyin
+UPDATE: Dictionary, new words
+FIX: Page, some garden-path words were not showing on page. This is fixed now
+FIX: Page, repeating separable verbs were showing on page except the last one. This is fixed now, all separable verbs are showing now
+
+8.24.84.980:
+UPDATE: Dictionary, improved word expansion
+OPTIMIZATION: Smaller filesize
+FIX: Annotations and colors were sometimes not effecting on page due to some words on page having a conflict with the data structure used. This is fixed by using different data structure, all words won't conflict anymore
+
+8.24.84.970:
+UPDATE: Safari's Parallel Text, translated words that are split apart have multiple highlights now
+OPTIMIZATION: Removed some cargo-culting superfluous optional chaining expressions in codes
+FIX: Clipboard, separate with space functionality was not working. This is fixed now
+FIX: Dictionary, only one separable verb is included even when a sentence has multiple separable verbs. This is fixed now, multiple separable verbs are now included in the dictionary
+
 8.24.84.960:
 UPDATE: Made Bing re-read aloud the sentence that is re-hovered on
 UPDATE: Made CWS work on sites with nested iframes, e.g., Readmoo
