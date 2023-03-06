@@ -1,6 +1,26 @@
 <div style="width: 80vw">
 
 <pre style='white-space: pre-wrap'>
+8.24.84.1220:
+NEW: `HSK Percentages of this page` can now be saved
+UPDATE: Page, improved segmentations
+UPDATE: Hoverless video dictionary, improved English annotations
+
+8.24.84.1210:
+UPDATE: Dictionary, new words
+FIX: Tones are rotated on vertical Chinese writing. This is fixed now, tones should not be rotated
+https://github.com/chinese-words-separator/chinese-words-separator.github.io/issues/9
+FIX: Dictionary should be displayed as horizontal even if the Chinese writing is vertical
+
+8.24.84.1200:
+UPDATE: Dictionary (word mode), made tapping detection more reliable
+FIX: Dictionary, word detection should not interfere when text is being highlighted
+FIX: Dictionary, keyboard shortcut 'A' (for back to previous character/word) was not working. This is fixed now
+
+wrong versioning: we skipped 8.24.84.110x to 8.24.84.119x
+
+8.24.84.1100: UPDATE: Upon installation, learners are now presented with choices how they will use CWS initially
+
 8.24.84.1091: FIX: Sound playback was not working on Kiwi mobile browser. This is fixed now, sound can be played back by tapping the pinyin (or zhuyin) or by tapping the loud speaker icon
 
 8.24.84.1090:
@@ -41,8 +61,7 @@ FIX: Setting to beginner, lower-intermediate, etc., was not working when from ta
 
 8.24.84.1020: OPTIMIZATION: Reduced memory footprint
 
-8.24.84.1011:
-FIX: Dictionary, there was an error how highlighting works, sometimes it scan backwards. This is fixed now
+8.24.84.1011: FIX: Dictionary, there was an error how highlighting works, sometimes it scan backwards. This is fixed now
 
 8.24.84.1010:
 UPDATE: Page, remember the word's last three visited sites. This can be set on Recall and Rewrite
@@ -106,6 +125,7 @@ UPDATE: Dictionary, new words
 FIX: When one-line definition is being expanded, the dictionary's height is increased, this was resulting to dictionary blocking the sentence on the page. This is fixed now, the dictionary repositions higher when its height is increased, so that the sentence below the dictionary will no longer be blocked from view
 FIX: Parallel Text was showing multiple notifications when instructing how to use parallel text. This is fixed now, notification is only shown once
 
+
 8.24.84.911: FIX: On sentence mining sites, there's an error when hearting a word/sentence that has no corresponding English for the example Chinese sentence. This is fixed now
 
 8.24.84.910: UPDATE: Annotate háng for 行 when its preceding text is a number
@@ -149,6 +169,7 @@ FIX: There's a border around dictionary's icons on some sites. This is fixed now
 UPDATE: Dictionary, new words
 FIX: Corrected HSK levels
 FIX: Some separable verbs were not included in the dictionary. This is fixed now
+
 
 8.24.84.831:
 FIX: Mimicking dialogues was considered incorrect when the source dialogue is using 她 or 它. This is fixed now, speech will match the source dialogue regardless of gender or pronoun
@@ -1657,7 +1678,6 @@ NEW: Added more compound words to the dictionary
 1.1.0 Added pīnyīn for Simplified characters
 
 1.0.0 Separates word using colors and/or spaces
-
 </pre>
 
 </div>
