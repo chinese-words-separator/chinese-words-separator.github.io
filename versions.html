@@ -1,6 +1,78 @@
 <div style="width: 80vw">
 
 <pre style='white-space: pre-wrap'>
+8.24.84.1751: FIX: Dictionary, some English words were not searchable. This is fixed now
+
+8.24.84.1750:
+UPDATE: Dictionary, new words
+UPDATE: Read offline, press Alt+Shift to hide the sidebar
+FIX: Dictionary, HSK's opacity not effecting on some sites. This is fixed now
+FIX: Dictionary, 绕过马路 should show 绕 too. This is fixed now
+
+8.24.84.1740:
+UPDATE: Dictionary, new words
+UPDATE: Dictionary, more English words are indexed
+UPDATE: Dictionary, HSK number is now using opacity instead of hardcoded gray color
+FIX: Words (e.g. 那里, 了解) with alternate writings but have exactly same meaning, their pinyin/bopomofo should not be italicized
+
+8.24.84.1732: FIX: Android's mobile browser, use touchend instead of click for navigating HSK-graded sentences and learned marker
+
+8.24.84.1731:
+FIX: Sidebar dictionary causes page layout problem on some sites. This is fixed now
+FIX: Sidebar dictionary's input box text color was incorrect on some sites. This is fixed now
+FIX: Vertical alignment of translators icon was incorrect on some sites. This is fixed now
+
+8.24.84.1730:
+UPDATE: Sidebar dictionary, now supports dark/light mode, and HSK-based/tone-based colors for hanzi
+FIX: Dictionary, some parts of text were having same color as background when in dark mode, making the text not visible. This is fixed now
+
+8.24.84.1721:
+FIX: Sentence dictionary, clicking the dictionary and then hovering its source sentence was making the dictionary disappear. This is fixed now
+FIX: Calligraphy dictionary, the calligraphy's box can now be seen in dark mode
+FIX: Dictionary, tooltip position is wrong when page is scrolled horizontally. This is fixed now
+
+8.24.84.1720:
+UPDATE: 400+ more color names
+FIX: Invalid color name input was causing the dictionary to display transparent background. This is fixed now, invalid light mode color name input falls back to white, invalid dark mode color name input falls back to black
+
+8.24.84.1710: 
+UPDATE: Dictionary, configurable background color
+UPDATE: Dictionary, HSK-based color and tone-based color options for hanzi
+
+8.24.84.1700:
+NEW: Context menu: Copy as pin1yin 
+NEW: Context menu: Copy as pin1 yin1
+UPDATE: Dictionary new words
+FIX: Sidebar dictionary, corrected Bing's link
+FIX: Sidebar dictionary, corrected the search box's border and its focus indicator
+FIX: Dictionary, corrected Chinese character detection from a multi-byte single character
+FIX: Dictionary, can now see the word's prefixes, infixes, and suffixes, regardless of preferred writing system
+
+8.24.84.1690: UPDATE: Sidebar dictionary, added translators button after the search box
+
+8.24.84.1680:
+UPDATE: Sidebar dictionary, person names are now searchable
+FIX: Sidebar dictionary, definitions stay in the page now even when using the pop-up dictionary in other parts of the page
+
+8.24.84.1670:
+NEW: Sidebar dictionary. To use, click CWS's icon, then click the magnifying glass icon
+UPDATE: Dictionary, can now set the sentence miner to mine from a specific sentence mining site instead of randomized. Default is random, this can be changed in Settings screen
+UPDATE: Dictionary, new words
+
+8.24.84.1661:
+FIX: Page, corrected ambiguous segementation
+
+8.24.84.1660:
+OPTIMIZATION: Page, moved out the garden-path algo from three function calls to one function call only
+FIX: Offline Reader, word list is now correctly showing
+
+8.24.84.1650:
+UPDATE: Page, space is now effecting on Offline Reader's vertical text
+UPDATE: Page, improved segmenter
+UPDATE: Popup, show learned count
+
+8.24.84.1640: UPDATE: Dictionary, can now list most common words that have the character in the middle
+
 8.24.84.1630:
 UPDATE: Dictionary, can now list most common words that begins or ends with a character. Off by default, must set the number of words to list via Settings screen
 UPDATE: Dictionary, other Chinese words in the definition need not be long-pressed/right-clicked anymore, just use tap/click
@@ -26,13 +98,13 @@ OPTIMIZATION: Removed redundant normalization
 8.24.84.1590: UPDATE: Indicate learned count on extension's badge
 
 8.24.84.1581: FIX: When sentence is re-hovered, it was shoowing translation notification even if the checkbox is unchecked. This is fixed now
- 
+
 8.24.84.1580:
 UPDATE: Dictionary, new words
 UPDATE: Use English voice type for text-to-speech when the hovered text is in English
 UPDATE: Use English to Chinese translation when the hovered text is in English
 UPDATE: Improved stemmer
- 
+
 8.24.84.1570:
 UPDATE: Read offline can now be bookmarked
 FIX: Parallel Text, corrected text alignment
@@ -54,6 +126,8 @@ NEW: Hanzi fonts: ST Song, ST FangSong
 8.24.84.1540: NEW: Chinese characters separator
 
 8.24.84.1530: UPDATE: Netflix hoverless video dictionary, rewinding subtitle is now working
+
+8.24.84.1522: FIX: Navigating previous sentence/phrase from the first sentence of the paragraph via keyboard shortcut 'A', was navigating to the first sentence of the previous paragraph. This is fixed now, keyboard shortcut 'A' now navigates to the last sentence of the previous paragraph when the active sentence is the first sentence of the  paragraph
 
 8.24.84.1521: FIX: Authentication, get access token automatically so no need to prompt the user again for password
 
@@ -137,6 +211,7 @@ FIX: Recall, some answers were not matching. This is fixed now
 UPDATE: Recall, answers to meaning matches other possible correct answers
 FIX: Hiding unknown HSK level was not working
 
+
 8.24.84.1350:
 UPDATE: Mapping Chinese words to English is now more accurate
 UPDATE: Dictionary, can now be translated to other languages even on tag-less mode
@@ -159,6 +234,7 @@ UPDATE: Recall and Rewrite: Can now choose both Traditional and Simplified, or e
 UPDATE: Recall and Rewrite: Marking learned words are now allowed even if the color is in Original setting
 FIX: Recall: Zhuyin at the side of hanzi should not be shown
 FIX: Hover should have an effect to zhuyin at the side of hanzi
+
 
 8.24.84.1311: FIX: Infinite loop
 
@@ -186,7 +262,7 @@ UPDATE: Options screen: Guide spacing's effect can now be previewed
 
 8.24.84.1260:
 UPDATE: Read offline: Can now set the reading mode to `vertical, right to left`
-UPDATE: Tone annotation: Changed the empty tone mark (to dot tone mark) for neutral tone, so that it can be seen if a word that has a neutral sound is marked as learned or not
+UPDATE: Tone annotation: Changed the empty tone mark (to dot tone mark) for neutral tone, so that it can be seen if a word that has a neutral tone is marked as learned or not
 
 8.24.84.1250: NEW: Annotation, can now fine tune the letter spacing of annotations (zhuyin, pinyin) via `Guide spacing`. This is especially useful for zhuyin which is very wide, which causes it to spill out of the hanzi character it is annotating. Narrower spacing can make zhuyin spill out less, which is better than making its font size smaller which affects its readability
 
