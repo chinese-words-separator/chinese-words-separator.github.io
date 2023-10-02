@@ -1,6 +1,34 @@
 <div style="width: 80vw">
 
 <pre style='white-space: pre-wrap'>
+8.24.84.1790:
+UPDATE: Page, an improvement on segmentation
+OPTIMIZATION: Page, short-circuited conditional split
+FIX: Dictionary, when the content is expanded at the bottom of the page, it was repositioning itself to top of the hovered word and then disappears. This is fixed now, the dictionary no longer reposition to top and no longer disappears
+FIX: Dictionary, was not able to search accented text, e.g., piñata. This is fixed now
+FIX: Notification, learned hanzi's has wrong color. This is fixed now
+FIX: Desktop Safari, was not able to send Google, DeepL, Bing translation to notification. This is fixed now
+
+8.24.84.1780:
+UPDATE: Notes, added separable verbs topic https://www.youtube.com/watch?v=wP21ezz-rJw
+FIX: Dictionary, example common words were barely visible on some sites. This is fixed now
+FIX: Dictionary, separable verb's outline was missing its top line. This is fixed now
+FIX: Hoverless video dictionary, speech recognition was case-sensitive. This is fixed now
+
+8.24.84.1770:
+UPDATE: Dictionary, more English words are indexed
+FIX: Dictionary, removed superfluous definitions
+
+8.24.84.1761:
+FIX: Dictionary, pinyin was in red color, should be black. This is fixed now
+FIX: HSK-graded reader, save/update/delete button has incorrect size on some sites. This is fixed now
+
+8.24.84.1760:
+UPDATE: Page, HSK-graded reading now shows the primary HSK level of the sentence being hovered
+UPDATE: Dictionary, new words
+FIX: Dictionary, wrong layout on some sites. This is fixed now
+FIX: Dictionary, when activating read-aloud in succession, it was stopping the speech on second activation instead of repeating the speech. This is fixed now
+
 8.24.84.1751: FIX: Dictionary, some English words were not searchable. This is fixed now
 
 8.24.84.1750:
@@ -60,7 +88,7 @@ UPDATE: Dictionary, can now set the sentence miner to mine from a specific sente
 UPDATE: Dictionary, new words
 
 8.24.84.1661:
-FIX: Page, corrected ambiguous segementation
+FIX: Page, corrected ambiguous segmentation
 
 8.24.84.1660:
 OPTIMIZATION: Page, moved out the garden-path algo from three function calls to one function call only
