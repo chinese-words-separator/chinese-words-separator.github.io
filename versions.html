@@ -1,6 +1,48 @@
 <div style="width: 80vw">
 
 <pre style='white-space: pre-wrap'>
+8.24.84.2052: FIX: Page, pinyin with multiple pronunciations had wrong underlines count. This is fixed now
+
+8.24.84.2051: FIX: Dictionary, hiding English definition was not working. This is fixed now
+
+8.24.84.2050:
+UPDATE: Dictionary, can now use sentence mining sites shortcut key on all Chinese words in the dictionary
+UPDATE: Dictionary, shows all the sentence mining sites shortcut keys on hanzi's tooltip
+FIX: Page, when pressing the hotkey for sentence mining while on the first word of the sentence/phrase, the sentence mining was not working. This is fixed now
+FIX: Dictionary, zhuyin had wrong transformation from pinyin. This is fixed now
+FIX: Dictionary, on some sites when the dictionary is translated to languages other than English, the definitions become gray/darker. This is fixed now
+FIX: Character dictionary, scrollbar should not appear when rendering hanzi strokes boxes. This is fixed now
+
+8.24.84.2040:
+OPTIMIZATION: Page, made separable verb-object comparisons fewer
+OPTIMIZATION: Page, simplified the logic for styling words with multiple meaning
+FIX: Exclude learned by character, wrongly renders separable verb-object, e.g., 睡觉 was rendering as shuì jué instead of shuì jiào. This is fixed now
+FIX: Sidebar dictionary, when dictionary is translated to Japanese, the Japanese characters were being separated and annotated with pinyin just like Chinese. This is fixed now, separating/annotating the definitions when they are translated to Japanese is prevented when the dictionary is translated to Japanese
+FIX (Edge): Dictionary, when page is translated, the dictionary was not showing the similar traditional<->simplified in gray color. This is fixed now
+
+8.24.84.2030:
+UPDATE: Correctly spoken marker, homonyms are now matching, e.g., 他 = 她 = 它, 马 = 码
+UPDATE: Page, segmentation improvement
+FIX: Hoverless video dictionary, English annotation was asterisk when characters are converted to pinyin or zhuyin. This is fixed now, English is now appearing on annotation
+
+8.24.84.2022: FIX: Sentence dictionary, should not highlight the word in the dictionary if the hovered word on the page is the first word of the sentence/phrase
+
+8.24.84.2021: FIX: Sidebar dictionary, search via voice dictation should stop the speech recognition when dictation is idle for 10 seconds
+
+8.24.84.2020:
+UPDATE: Correctly spoken marker, learner can now retry pronouncing words when there's a mistake on pronunciations
+UPDATE: (Safari) Sidebar dictionary, can now dictate the Chinese word
+UPDATE: (Safari) Hoverless video dictionary, learner can now mimic the dialogues
+
+8.24.84.2010:
+NEW: Marker for correctly spoken words
+FIX: Learned marker, should not activate when selecting text. This is fixed now
+FIX: Dictionary, when translation is active, untranslated Chinese text gets annotated with pinyin. This is fixed now, untranslated text does not get annotated anymore
+
+8.24.84.2000:
+OPTIMIZATION: Page, removed redundant null checks from text parser
+FIX: Rewrite, page should not be converted to pinyin or zhuyin
+
 8.24.84.1991:
 FIX: Dictionary, expanded words had wrong order. This is fixed now
 FIX: Dictionary, should not be able to switch to character mode when the page is converted to pinyin or zhuyin
@@ -11,7 +53,7 @@ UPDATE: Dictionary, new words
 FIX: Page and dictionary, some words have wrong segmentation. This is fixed now
 FIX: Learned and to learn, pinyin-converted page was not navigable. This is fixed now
 FIX: Edge's translator, it was affecting the size of the dictionary's pinyin and definition. This is fixed now
-FIX: Edge's Read-aloud, CWS was erroneously regenerating pinyin when Edge is pronouncing each word This is fixed now
+FIX: Edge's Read-aloud, CWS was erroneously regenerating pinyin when Edge is pronouncing each word. This is fixed now
 FIX: Read-aloud, hanzi with multiple pronunciation was not working on Safari and MacChrome. It's working now
 
 8.24.84.1982:
@@ -22,7 +64,7 @@ FIX: Page, English words should have space on them when Separate with space is c
 UPDATE: Learner level mode, added: Learn sound first
 UPDATE: Page, some garden-path improvements
 UPDATE: Page, include the page's title to the HSK-graded sites list
-    
+
 8.24.84.1970:
 UPDATE: Dictionary, new words
 FIX: Page, don't put space before these punctuations: 
@@ -36,7 +78,8 @@ FIX: Page, some corrections on tokenization
 FIX: Page, font was not effecting on characters on some sites. This is fixed now
 FIX: Page, English annotation (on video subtitles) were showing asterisks on some words. This is is fixed now, English words are now showing
 FIX: Page, shen conversion is pinyin or zhuyin, the English->Chinese dictionary was not working. This is fixed now, English->Chinese dictionary is now working even when the page is converted to pinyin or zhuyin
- 
+
+
 8.24.84.1960:
 UPDATE: Learned words marker on touch-based Windows, CWS can now distinguish mouse click vs finger tap. When using finger tap, it does not mark/unmark learned word anymore so as to prevent activating the marker/unmarker when the learner is just looking up words on touch-based Windows. To mark/unmark learned word with finger on touch-based Windows, use long-press instead
 
@@ -55,7 +98,7 @@ FIX: Word dictionary, learner can't re-select the highlight that was highlighted
 8.24.84.1942: MINOR UPDATE: Dictionary, simplified the gestures for actions
 
 8.24.84.1941: FIX: Dictionary, tooltips format was inconsistent
- 
+
 8.24.84.1940:
 UPDATE: Read offline, there are buttons now to hide/unhide the text area
 UPDATE: Dictionary, made tooltips text consistent
@@ -76,7 +119,7 @@ MINOR UPDATE: Text-to-speech for Linux, words with different pinyin pronunciatio
 MINOR UPDATE: Text-to-speech for Windows, words with different pinyin pronunciations is working on Taiwan only
 
 8.24.84.1911: MINOR UPDATE: Added fonts that are available on Windows
- 
+
 8.24.84.1910:
 UPDATE: HSK-graded web list, now includes the unique words count
 UPDATE: Dictionary, new words
@@ -99,7 +142,7 @@ FIX: DeepL, replace '/' with '\/'
 8.24.84.1880:
 UPDATE: Side location dictionary, put dictionary icons to its own line so it won't overlap with the definitions
 UPDATE: Dictionary, new words
- 
+
 8.24.84.1870:
 UPDATE: Page, when the dictionary is pinned to the right side, navigating (via keyboard shortcut) next/previous sentence that are out of view will scroll the sentence into view. Good for mouse-free reading
 FIX: Dictionary, keyboard shortcuts were activating when typing in the sidebar dictionary. This is fixed now
@@ -124,7 +167,7 @@ FIX: Dictionary, stemmer was not working correctly for some words, 'purepen' was
 UPDATE: Sidebar dictionary, the equivalent Chinese words of a searched English word are now sorted by the Chinese word's ranking, from most frequently used down to least. If the Chinese word has no ranking it will be sorted last and alphabetically by pinyin
 UPDATE: Dictionary, new words
 UPDATE: Dictionary, the other writing system can be made to have the same height as the main writing system, just click the other writing system
- 
+
 8.24.84.1830: UPDATE: Dictionary, more English words are indexed
 
 8.24.84.1820:
