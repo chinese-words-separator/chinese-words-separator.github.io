@@ -1,6 +1,37 @@
 <div style="width: 80vw">
 
 <pre style='white-space: pre-wrap'>
+8.24.84.2100:
+UPDATE: Offline sentence miner, separable verbs are now indexed too even if they are separated in the sentence
+UPDATE: Offline sentence miner, when clicking the verb part of separable verbs, the combined verb+object will be added to dictionary listing, not just the verb
+FIX: Hoverless video dictionary, should always have maximum height. This is fixed now
+
+8.24.84.2090:
+UPDATE: Hoverless video dictionary, uses the preferred dictionary color mode now
+FIX: Right side location dictionary and hoverless video dictionary were conflicting with each other. This is fixed now
+FIX: Right side location dictionary and dictionary searcher were conflicting with each other. This is fixed now
+
+8.24.84.2080:
+UPDATE: Word dictionary, can now be placed at the right side. The calligraphy steps is automatically shown to fill the large blank space
+UPDATE: Sentence dictionary, pressing Ctrl key does not make the sentence disappear anymore, allowing the user to copy the selected from the sentence dictionary via Ctrl+C. Sentence dictionary will disappear only when the user do both holding the Ctrl key and moving the mouse
+UPDATE: Word dictionary, its location can now be pinned temporarily by holding the Shift key, so that it will not disappear when moving the mouse cursor. This is useful when the dictionary is at the corner locations (or right side of the page) and the learner want to move the cursor inside the pinned word dictionary to learn more about the word
+FIX: Sentence dictionary, the word dictionary was appearing sometimes even if the active dictionary is the sentence dictionary. This is fixed now
+FIX: Offline sentence miner, was adding word from other Chinese sentences to the dictionary. Should add word from its own sentence only. This is fixed now
+FIX: Offline sentence miner, should prevent adding the word from sentence if the word is already listed in the dictionary
+
+8.24.84.2070:
+NEW: Offline sentence miner, double-tap the word in the dictionary to mine sentences from offline sentence miner
+UPDATE: Dictionary, its definitions can now be saved to database. Getting the definitions from database uses less memory than getting them from file
+UPDATE: Learned marker, made compatible with dark mode
+UPDATE: Learned marker, made compatible with offline sentence miner, the learner need to use long-press or keyboard shortcut
+FIX: Learned marker, on some websites, the learned marker is still in dark color, should be white, and should be black when in light mode
+FIX: Parallel Text, on some websites, after the text is translated, the text is changed to dark gray color, which makes the color almost invisible when dark mode is effected on Parallel Text. This is fixed now
+
+8.24.84.2061:
+FIX: Dictionary, words with repeating characters should have two definitions only, not three
+FIX: Parallel Text, its text color was bla;ck on some websites when in dark mode, making the text invisible. This is fixed now
+FIX: Sidebar dictionary, should follow the settings of light/dark/yellow mode of the dictionary
+
 8.24.84.2060:
 UPDATE: Light mode and dark mode
 FIX: Read offline, its parallel text was not working when page is converted to pinyin/zhuyin. This is fixed now
