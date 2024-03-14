@@ -1,6 +1,17 @@
 <div style="width: 80vw">
 
 <pre style='white-space: pre-wrap'>
+8.24.84.2110:
+UPDATE: Offline sentence miner, removed the rewind and fast forward button, so it's not easy to accidentally move to first/last sentence. Rewind and fast forward are moved to long-press event of previous and next buttons respectively
+UPDATE: Offline sentence miner, added button for separating all words in the sentence, which then adds each word to the dictionary
+UPDATE: Offline sentence miner, added functionalities for Read-aloud, Google, DeepL, Bing, Remember to Learning Tracking Sheet, and Copy to clipboard
+UPDATE: Offline sentence miner, can automatically request translation from Google, DeepL, Bing then show it as notification
+UPDATE: Long-press delay setting. On mobile devices, long-press triggers text selection, learners can adjust this setting to longer delay so that text selection won't accidentally trigger the marker/unmarker for learned words
+UPDATE: Learning tracking sheet, Google Translate formula is added at the last column
+UPDATE: Word dictionary, when the dictionary is at the right side and the learner presses the navigation shortcuts (e.g., 'a' for forward, 'A' for backward), and the highlighted text is out of view, the highlighted text will be automatically brought into view
+FIX: Learning tracking sheet, on Youdao, the parsed English and Chinese sentences are reversed when the searched word is English. This is fixed now, the English and Chinese text are slotted on the correct columns on LTS and spreadsheet-compatible clipboard data
+FIX: Right side location dictionary, when using sentence dictionary, and then holding the Control key to activate word dictionary temporarily, and then release Control key, and then rehover words on the same sentence, the dictionary does not go back to sentence dictionary mode. This is fixed now
+
 8.24.84.2100:
 UPDATE: Offline sentence miner, separable verbs are now indexed too even if they are separated in the sentence
 UPDATE: Offline sentence miner, when clicking the verb part of separable verbs, the combined verb+object will be added to dictionary listing, not just the verb
