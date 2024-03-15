@@ -1,6 +1,14 @@
 <div style="width: 80vw">
 
 <pre style='white-space: pre-wrap'>
+8.24.84.2120:
+UPDATE: More garden-path detections
+UPDATE: Dictionary, changed the icon for vocabulary to ✨ 
+UPDATE: Offline sentence miner, made detection of writing system (simplified, traditional) more robust, so that CWS can display the Chinese sentence in the writing system the learner is currently learning
+FIX: Recall & Rewrite, learned marker was working even when word has no color, that is, separating colors is in Original settings; making it not possible to see if the word is already learned or not yet. This is fixed now, marking/unmarking word as learned is only working if there is a color chosen (i.e., Rotating, HSK-based, Tone-based)
+FIX: Offline sentence miner, prevent Chinese text from being translated by the browser's built-in translator
+FIX: Dictionary, currently 和 default is he4, should be he2. This is fixed now
+    
 8.24.84.2110:
 UPDATE: Offline sentence miner, removed the rewind and fast forward button, so it's not easy to accidentally move to first/last sentence. Rewind and fast forward are moved to long-press event of previous and next buttons respectively
 UPDATE: Offline sentence miner, added button for separating all words in the sentence, which then adds each word to the dictionary
