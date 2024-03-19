@@ -10,12 +10,15 @@ UPDATE: Offline sentence miner, it can now be safely translated to Japanese with
 FIX(Safari): Word dictionary, when separating a word, the dictionary is getting re-positioned at wrong location. This is fixed now, finally
 
 8.24.84.2130:
+UPDATE: Page, tokenizer minimizes garden-path segmentations
+OPTIMIZATION: Page, improved the loop continuation of tokenizer
+UPDATE: Dictionary, detects more garden-path matches
 UPDATE: Dictionary search, accented words can now be searched with non-accented search, e.g., pinata now matches piñata
 UPDATE: Offline sentence miner, now shows the HSK rating of the sentence
 UPDATE: Read Offline, its hostname is now showing as cws on Recall & Rewrite, instead of showing as long sequence of random-looking id
 FIX: Right side location dictionary, when switch to other locations afterward, then clicked on page, is closing the dictionary, but the right side panel is still intact. This is fixed now
 FIX: Hoverless video dictionary, YouTube video had incorrect width. This is fixed now
-    
+
 8.24.84.2120:
 UPDATE: More garden-path detections
 UPDATE: Dictionary, changed the icon for vocabulary to ✨ 
@@ -23,7 +26,7 @@ UPDATE: Offline sentence miner, made detection of writing system (simplified, tr
 FIX: Recall & Rewrite, learned marker was working even when word has no color, that is, separating colors is in Original settings; making it not possible to see if the word is already learned or not yet. This is fixed now, marking/unmarking word as learned is only working if there is a color chosen (i.e., Rotating, HSK-based, Tone-based)
 FIX: Offline sentence miner, prevent Chinese text from being translated by the browser's built-in translator
 FIX: Dictionary, currently 和 default is he4, should be he2. This is fixed now
-    
+
 8.24.84.2110:
 UPDATE: Offline sentence miner, removed the rewind and fast forward button, so it's not easy to accidentally move to first/last sentence. Rewind and fast forward are moved to long-press event of previous and next buttons respectively
 UPDATE: Offline sentence miner, added button for separating all words in the sentence, which then adds each word to the dictionary
@@ -63,7 +66,7 @@ FIX: Parallel Text, on some websites, after the text is translated, the text is 
 
 8.24.84.2061:
 FIX: Dictionary, words with repeating characters should have two definitions only, not three
-FIX: Parallel Text, its text color was bla;ck on some websites when in dark mode, making the text invisible. This is fixed now
+FIX: Parallel Text, its text color was black on some websites when in dark mode, making the text invisible. This is fixed now
 FIX: Sidebar dictionary, should follow the settings of light/dark/yellow mode of the dictionary
 
 8.24.84.2060:
@@ -73,7 +76,7 @@ FIX: Read offline, its parallel text was not working when page is converted to p
 8.24.84.2053:
 FIX: Dictionary, words with repeating characters should have two definitions only, not three
 FIX: Page, characters had wrong conversion when characters are converted to pinyin or zhuyin. This is fixed now
-    
+
 8.24.84.2052: FIX: Page, pinyin with multiple pronunciations had wrong underlines count. This is fixed now
 
 8.24.84.2051: FIX: Dictionary, hiding English definition was not working. This is fixed now
