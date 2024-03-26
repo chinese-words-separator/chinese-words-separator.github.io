@@ -1,6 +1,37 @@
 <div style="width: 80vw">
 
 <pre style='white-space: pre-wrap'>
+8.24.84.2172: FIX: Character mode dictionary, was not repositioning to top of sentence when dictionary's bottom goes past the bottom of the page. This is fixed now, the character mode dictionary can reposition now
+
+8.24.84.2171:
+FIX: Offline sentence miner, some words were not indexed. This is fixed now
+FIX: Learned marker, the Restore Learned from Clipboard was not working in Windows. This is fixed now
+FIX: Dictionary search, was showing calligraphy animation even when the search is multi-words. This is fixed now, should only show calligraphy animation when the search is one word only
+
+8.24.84.2170:
+UPDATE: Dictionary, italicize words with multiple pronunciations, e.g., `钥 yuè 鑰 key｡ also pr. [yao4]`
+UPDATE: Dictionary, can now click the pinyin/zhuyin pronunciation hint, when the yao4 above is clicked, its pronunciation sound will be played
+FIX: Parallel Text, highlighter was not visible when on dark mode. This is fixed now
+FIX: Hoverless Video Dictionary, was producing wrong height when expanding definitions with ellipsis. This is fixed now
+
+8.24.84.2160:
+UPDATE: Dictionary, new words
+FIX: Dictionary, wrong height when clicked. This is fixed now
+
+8.24.84.2150:
+UPDATE: Dictionary, looking up the Chinese words of an English word does not require switching to word dictionary anymore
+UPDATE: Dictionary, pre and code tags does not require holding the Control key anymore
+UPDATE: Dictionary, when on YouTube and the active dictionary is the Sentence Dictionary and (most) Chinese texts are annotated with pinyin, the dictionary will be in Word Dictionary mode when it is hovered on text are not annotated with pinyin. Some texts in YouTube can't be replaced safely, hence some text some don't have pinyin. This update frees the learner from requiring to hold the Control key to activate word dictionary temporarily so that it can be used on text that are not annotated with pinyin
+FIX: Page and Dictionary, some characters that becomes second tone when they come after some certain words, was not showing the second tone color. This is fixed now
+FIX: Dictionary, strokes count should be on single character only
+
+8.24.84.2144: FIX: Dictionary, some of its functionalities have wrong repositioning. This is fixed now
+
+8.24.84.2143:
+FIX: Dictionary, some garden-path words, and some separable verbs are duplicating. This is fixed now
+FIX: Dictionary, when the dictionary is at the bottom of page, and when a word with big content is dynamically added to dictionary, thus making the bottom part of the dictionary not visible to user, then the dictionary the needs be to resized and re-positioned above the hovered word/sentence, this makes dictionary disappear. In the past, to prevent the dictionary from disappearing, we do not make it reposition to top, and we just simply resize the dictionary to small size so the dictionary will still be visible to user and then just add scrollbar to it. The drawback of the aforementioned approach is that the dictionary's available area for content is so cramped. This is fixed now (finally), the dictionary can now be safely resized to the total height of the content and can be safely re-positioned above the hovered word/sentence without making the dictionary disappear
+FIX: Some websites affects the dark mode and light of HSK-graded reading and Learning list. This is fixed now
+
 8.24.84.2140:
 UPDATE: Dictionary, when it is at the right side location, it shows the word/sentence's HSK rating
 UPDATE: Dictionary, more robust detection of garden-paths
