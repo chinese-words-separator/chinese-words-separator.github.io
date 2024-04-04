@@ -1,6 +1,31 @@
 <div style="width: 80vw">
 
 <pre style='white-space: pre-wrap'>
+8.24.84.2220:
+UPDATE: Dictionary, new words
+UPDATE: Hoverless video dictionary, for videos without Chinese subtitles, there's now a listener button that converts Chinese audio to Chinese subtitles on-the-fly
+FIX: Recall, was not working. This is fixed now
+FIX(Safari): Read-aloud, was not working on Learn sound first mode. This is fixed now
+
+8.24.84.2210:
+UPDATE: Recall, show most recent visited first
+FIX: Sentence dictionary, the content gets recreated every time a word is hovered even if the new word hovered is from the same sentence, recreating content causes jumpy scrolling. This is fixed now, there's no more jumpy scrolling as the content gets recreated only when necessary
+FIX: Offline sentence miner, was producing duplicate garden-path words. This is fixed now
+
+8.24.84.2200:
+UPDATE: Offline Sentence Miner, right-clicking (long-press on mobile) the speaker icon now switches the voice type
+FIX: Dictionary, it's showing definition for single letter even if it is not meant to be shown according to settings. This is fixed now
+
+8.24.84.2190:
+UPDATE: Dictionary, can now add the other writing system of the word to the dictionary. This can be done by clicking the other writing system of the word twice
+UPDATE: Dictionary, changed the hanzi font to fixed-width font
+FIX: Sentence dictionary, unchecking `Require holding Ctrl/control key to show the Chinese words of the English word` should also work while in sentence dictionary mode, no need to switch to word dictionary mode. This is fixed now
+
+8.24.84.2181:
+FIX: Hoverless video dictionary, the English annotation was just based on the definition from the first pinyin of hanzi, this produces erroneous English annotation if the hanzi has many pinyin readings, e.g., 长. This is fixed now, the English annotation is now chosen based on hanzi's pinyin annotation. That is if 长 is cháng, the English annotation will be from `length｡ long｡ forever｡ always｡ constantly`; and if 长 is zhǎng, the English annotation will be from `chief｡ head｡ elder｡ to grow｡ to develop｡ to increase｡ to enhance`
+FIX(Mobile): Dictionary, should not reposition when calligraphy is dynamically added
+FIX: Page, 长 should be cháng (not zhǎng) when preceded with words similar to very, e.g., 挺长 should be tǐng cháng, not tǐng zhǎng
+    
 8.24.84.2180:
 UPDATE: Dictionary, can now show the calligraphy of a character. To enable this, on settings, set the Show common words containing the character to 5 or higher. Then in dictionary, right-click the vertical ellipsis when on desktop; long-press the vertical ellipsis when on mobile
 UPDATE: Offline sentence miner, when page is converted to pinyin/zhuyin, clicking on word that is pinyin/zhuyin now adds definition for the word
