@@ -1,6 +1,45 @@
 <div style="width: 80vw">
 
 <pre style='white-space: pre-wrap'>
+8.24.84.2280:
+UPDATE: Can now make the extension activate on Chinese pages only, this can be set in Settings screen. Enabling 'Use on Chinese pages only', CWS can be prevented from activating on pages that are in other languages, e.g., Japanese
+UPDATE: Page, when converting from simplified to traditional, allow conversion when the other definition(s) of the word are already archaic. e.g., 听 (ting1) should be allowed to be converted to 聽 (ting1) since the other definition of 听 (yin3) as 'smile' is already archaic
+FIX: Text-to-speech, this was effecting on speech recognition. This is fixed now, speech recognition no longer hear audio from text-to-speech
+FIX: Learned marker, combination of exclude learned by character + exclude from colors was not working when the color mode is Rotating or HSK-based. This is fixed now
+FIX: Dictionary, removed some superfluous compound words, compounds that are merely A + B
+FIX: Page, Dictionary, a zhuyin conversion from pinyin was missing
+
+8.24.84.2270:
+UPDATE: Learned marker, now accepts inputting 'v' for 'u:', e.g., can now accept 'nv3 ren2' for 'nu:3 ren2'
+UPDATE: Dictionary, can now add embedded sentence translation to Respeak
+FIX(Safari): Dictionary, calligraphy was showing even when search has multiple results. This is fixed now, calligraphy is showing only when search has single result
+FIX: Dictionary, in Chinese Grammar Wiki, adding to Respeak was working only when the dictionary is in word dictionary mode, was not working when in sentence dictionary mode. This is fixed now, it works on both dictionary mode
+FIX: Dictionary, while in Youdao the dictionary was not working when 'more' is clicked, there's a runtime error. This is fixed now
+FIX: Respeak, Japanese text should not be annotated with pinyin
+
+8.24.84.2260:
+UPDATE: Respeak, can now add multiple sentences from clipboard
+FIX: Page, Dictionary: 會|会 should default to hui4
+
+8.24.84.2250:
+UPDATE: Respeak, homonyms should match. e.g., 发掘 should match spoken 发觉, they both resolve to fājué
+UPDATE: Respeak, allow adding sentence to respeak from clipboard's content
+UPDATE: Respeak, added learned marker
+
+8.24.84.2241: FIX: Unicode unifier was not working. This is fixed now
+
+8.24.84.2240:
+NEW: Respeak, spaced repetition system for speaking
+UPDATE: Dictionary, prevents multiple entries of dynamically-added words
+UPDATE: Sentence mining sites, now allows URL with parameter of hanzi's code point value instead of hanzi itself, e.g., https://makemeahanzi.herokuapp.com/#/codepoint/22909. 22909 is the 好's code point value. To parameterize code point, use %c instead of %s, i.e., https://makemeahanzi.herokuapp.com/#/codepoint/%c
+
+8.24.84.2230:
+UPDATE: Dictionary, new words
+UPDATE: Sidebar dictionary, holding Alt/option before showing the sidebar dictionary will put the hovered text in the sidebar dictionary's search box
+UPDATE: Shortcuts for Recall, Rewrite, Leaning Tracking Sheet
+FIX: On-demand word dictionary, was not working. This is fixed now
+FIX(Android): Dictionary, long-press was activating both word/character separation and sentence mining. This is fixed now, long-press on Android is activating sentence mining only
+    
 8.24.84.2220:
 UPDATE: Dictionary, new words
 UPDATE: Hoverless video dictionary, for videos without Chinese subtitles, there's now a listener button that converts Chinese audio to Chinese subtitles on-the-fly
