@@ -1,12 +1,20 @@
 <div style="width: 80vw">
 
 <pre style='white-space: pre-wrap'>
+8.24.84.2301: FIX: Respeak, _Hide key word_ was not working on these separating color modes: Rotating, HSK-based, Familiarity; it's working on Tone-based and Original only. This is fixed now, _Hide key word_ functionality is now working on all separating color modes
+
+8.24.84.2300:
+NEW: Familiarity, word/character familiarity indicator
+FIX: Offline sentence miner, was including separable verbs that spans phrases. This is fixed now, only separable verbs that are in the same phrase are included
+FIX: Page, showing/hiding guide is now more consistent
+
+8.24.84.2290:
 UPDATE: Respeak, key word can now be set to hidden, to test recall of important word
 UPDATE: Respeak, added Listen button
 UPDATE: Page, Dictionary, 將|将 should default to jiang1
 UPDATE: Dictionary, bound form now sorts last
 FIX: Page, Dictionary, set HSK level for erhua variants 
-    
+
 8.24.84.2280:
 UPDATE: Can now make the extension activate on Chinese pages only, this can be set in Settings screen. Enabling 'Use on Chinese pages only', CWS can be prevented from activating on pages that are in other languages, e.g., Japanese
 UPDATE: Page, when converting from simplified to traditional, allow conversion when the other definition(s) of the word are already archaic. e.g., 听 (ting1) should be allowed to be converted to 聽 (ting1) since the other definition of 听 (yin3) as 'smile' is already archaic
@@ -45,7 +53,42 @@ UPDATE: Sidebar dictionary, holding Alt/option before showing the sidebar dictio
 UPDATE: Shortcuts for Recall, Rewrite, Leaning Tracking Sheet
 FIX: On-demand word dictionary, was not working. This is fixed now
 FIX(Android): Dictionary, long-press was activating both word/character separation and sentence mining. This is fixed now, long-press on Android is activating sentence mining only
-    
+
+8.24.84.2222:
+FIX: Dictionary, character that was being shown as variant is just similar to original. This is fixed now, the similar character is not shown anymore
+
+An example:
+
+Before (incorrect):
+纔
+cái 才 (variant of 才[cai2]) just now｡ (variant of 才[cai2]) (before an expression of quantity) only
+
+After (correct):
+纔
+cái (variant of 才[cai2]) just now｡ (variant of 才[cai2]) (before an expression of quantity) only
+
+8.24.84.2221:
+FIX: Dictionary, definition was showing even when its variant is incorrect. This is fixed now
+
+An example:
+
+When `Show both traditional and simplified` is checked, it is showing these definitions:
+尝
+cháng 嘗 to taste､ to try (food)｡ to experience｡ (literary) ever､ once 
+cháng 嚐 to taste､ to experience (variant of 嘗|尝[chang2])
+cháng 甞 old variant of 嘗|尝[chang2]
+
+When `Show both traditional and simplified` is unchecked, it was showing the following definitions (which is incorrect):
+尝
+cháng to taste､ to try (food)｡ to experience｡ (literary) ever､ once 
+cháng to taste､ to experience (variant of 嘗|尝[chang2])
+
+The `cháng to taste､ to experience (variant of 嘗|尝[chang2])` should not be shown; as it seems that `尝` is the variant, when the variant is actually `嚐`
+
+Thus when `Show both traditional and simplified` is unchecked, it should show the following only:
+尝
+cháng to taste､ to try (food)｡ to experience｡ (literary) ever､ once 
+
 8.24.84.2220:
 UPDATE: Dictionary, new words
 UPDATE: Hoverless video dictionary, for videos without Chinese subtitles, there's now a listener button that converts Chinese audio to Chinese subtitles on-the-fly
@@ -70,12 +113,12 @@ FIX: Sentence dictionary, unchecking `Require holding Ctrl/control key to show t
 FIX: Hoverless video dictionary, the English annotation was just based on the definition from the first pinyin of hanzi, this produces erroneous English annotation if the hanzi has many pinyin readings, e.g., 长. This is fixed now, the English annotation is now chosen based on hanzi's pinyin annotation. That is if 长 is cháng, the English annotation will be from `length｡ long｡ forever｡ always｡ constantly`; and if 长 is zhǎng, the English annotation will be from `chief｡ head｡ elder｡ to grow｡ to develop｡ to increase｡ to enhance`
 FIX(Mobile): Dictionary, should not reposition when calligraphy is dynamically added
 FIX: Page, 长 should be cháng (not zhǎng) when preceded with words similar to very, e.g., 挺长 should be tǐng cháng, not tǐng zhǎng
-    
+
 8.24.84.2180:
 UPDATE: Dictionary, can now show the calligraphy of a character. To enable this, on settings, set the Show common words containing the character to 5 or higher. Then in dictionary, right-click the vertical ellipsis when on desktop; long-press the vertical ellipsis when on mobile
 UPDATE: Offline sentence miner, when page is converted to pinyin/zhuyin, clicking on word that is pinyin/zhuyin now adds definition for the word
 FIX: Page, garden-path was not showing on Learn Sound First mode. This is fixed now
-    
+
 8.24.84.2172: FIX: Character mode dictionary, was not repositioning to top of sentence when dictionary's bottom goes past the bottom of the page. This is fixed now, the character mode dictionary can reposition now
 
 8.24.84.2171:
@@ -260,7 +303,6 @@ FIX: Page, some corrections on tokenization
 FIX: Page, font was not effecting on characters on some sites. This is fixed now
 FIX: Page, English annotation (on video subtitles) were showing asterisks on some words. This is is fixed now, English words are now showing
 FIX: Page, shen conversion is pinyin or zhuyin, the English->Chinese dictionary was not working. This is fixed now, English->Chinese dictionary is now working even when the page is converted to pinyin or zhuyin
-
 
 8.24.84.1960:
 UPDATE: Learned words marker on touch-based Windows, CWS can now distinguish mouse click vs finger tap. When using finger tap, it does not mark/unmark learned word anymore so as to prevent activating the marker/unmarker when the learner is just looking up words on touch-based Windows. To mark/unmark learned word with finger on touch-based Windows, use long-press instead
@@ -607,7 +649,6 @@ FIX: Recall, some answers were not matching. This is fixed now
 UPDATE: Recall, answers to meaning matches other possible correct answers
 FIX: Hiding unknown HSK level was not working
 
-
 8.24.84.1350:
 UPDATE: Mapping Chinese words to English is now more accurate
 UPDATE: Dictionary, can now be translated to other languages even on tag-less mode
@@ -630,7 +671,6 @@ UPDATE: Recall and Rewrite: Can now choose both Traditional and Simplified, or e
 UPDATE: Recall and Rewrite: Marking learned words are now allowed even if the color is in Original setting
 FIX: Recall: Zhuyin at the side of hanzi should not be shown
 FIX: Hover should have an effect to zhuyin at the side of hanzi
-
 
 8.24.84.1311: FIX: Infinite loop
 
@@ -802,7 +842,6 @@ UPDATE: Dictionary, new words
 FIX: When one-line definition is being expanded, the dictionary's height is increased, this was resulting to dictionary blocking the sentence on the page. This is fixed now, the dictionary repositions higher when its height is increased, so that the sentence below the dictionary will no longer be blocked from view
 FIX: Parallel Text was showing multiple notifications when instructing how to use parallel text. This is fixed now, notification is only shown once
 
-
 8.24.84.911: FIX: On sentence mining sites, there's an error when hearting a word/sentence that has no corresponding English for the example Chinese sentence. This is fixed now
 
 8.24.84.910: UPDATE: Annotate háng for 行 when its preceding text is a number
@@ -846,7 +885,6 @@ FIX: There's a border around dictionary's icons on some sites. This is fixed now
 UPDATE: Dictionary, new words
 FIX: Corrected HSK levels
 FIX: Some separable verbs were not included in the dictionary. This is fixed now
-
 
 8.24.84.831:
 FIX: Mimicking dialogues was considered incorrect when the source dialogue is using 她 or 它. This is fixed now, speech will match the source dialogue regardless of gender or pronoun
@@ -908,7 +946,6 @@ FIX: Corrected the computation of *HSK percentages of this page* functionality
 UPDATE: Dictionary, show keyboard shortcuts on tooltips
 FIX: Dictionary was sometimes closing when parallel text is active. This is fixed now
 
-
 8.24.84.730:
 NEW: Dictionary, neutral color setting for dictionary's pinyin/zhuyin
 UPDATE: Dictionary, new words
@@ -931,12 +968,10 @@ UPDATE: Dictionary, new words
 OPTIMIZATION: Tags for non-Chinese characters should only be created when necessary
 UPDATE: Dictionary, separable verb is now included
 
-
 8.24.84.701:
 FIX: Characters were incorrectly converted (e.g., 法 to 灋) to a variant when converting from simplified to traditional. This is fixed now, characters should not convert if the corresponding conversion just maps to a variant
 FIX: Correctly speaking the sentence was not considered correct when the subtitles being spoken have spaces(or unusual punctuations or symbols) between phrases. This is fixed now, correctly speaking the sentence is now considered correct despite the subtitle having spaces/punctuations/symbols
 FIX: Parallel text: Chinese full dot, question mark, etc, had no space when followed by next sentence. This is fixed now
-
 
 8.24.84.700:
 NEW: Language learners can now practice speaking through microphone on Netflix, YouTube, Viki, WeTV, iQIYI by using the hoverless video dictionary
@@ -1314,7 +1349,6 @@ FIX: Corrected resizing of pop-up dictionary's height to make expanded words vie
 UPDATE: Improved expansion of word, e.g., 掰不开 is expanded as 掰开 and 不, instead of 掰 and 不 and 开; 找不到 is expanded as 找到 and 不, instead of 找 and 不到
 UPDATE: Improved segmentation
 
-
 8.24.58.0:
 NEW: Keyboard shortcut 'e' to unhide English definitions that were hidden by Chinese immersion mode, especially useful when used in conjunction with keyboard shortcut 'a' (advance to next word)
 UPDATE: Made the default tone-based colors eye-friendly on both dark and light backgrounds
@@ -1338,7 +1372,6 @@ FIX: Corrected Dictionary HSK wrong alignment
 NEW: Idioms with commas are now showing on sentence dictionary
 UPDATE: Dictionary, new words
 FIX: Backward-slanting comma is not used for segmenting phrases anymore. Backward-slanting comma is mostly used for itemizations
-
 
 8.24.53.0: NEW: See word's HSK level beside dictionary's hanzi
 
@@ -1651,7 +1684,6 @@ UPDATE: Improved HSK light mode default colors; Blue = HSK 5, Dodger blue = HSK 
 UPDATE: Made translator icons of Google and Bing not draggable
 UPDATE: Improved the default color of HSK level
 
-
 8.17.0: NEW: When copying the definition of a word or when remembering the word to learning tracking sheet, all the subwords of the word are included by default; there is now an option to exclude the word's subwords
 
 8.16.0:
@@ -1755,7 +1787,6 @@ NEW: Copying definitions via letter 'c', 'C' shortcut, or via clipboard icon, wi
 
 NEW: Conveniently open your learning tracking sheet from Tools menu. Set the link of your Learning tracking sheet in the Options screen. To access the learning tracking sheet's link, click mouse right button on Chinese words separator icon on browser's toolbar, select Tools > 🗂 Learning tracking sheet
 
-
 7.3.0: NEW: Additional predefined settings: Intermediate, Advanced, Expert
 
 Beginner: Hanzi 2x, pinyin, color-coded tones, space, automatic read-aloud, sentence dictionary
@@ -1764,7 +1795,6 @@ Advanced: Hanzi 1.25x, rotating colors, exclude learned words from color, on-dem
 Expert: Hanzi 1x, on-demand word dictionary
 
 FIX: When on-demand word dictionary is used in text boxes, the dictionary does not disappear when moving the mouse cursor away from the text, must hover the mouse in the dictionary first and then move the mouse cursor away from the dictionary so the dictionary will disappear. This is fixed now, it is no longer required to hover the mouse cursor on the dictionary first when making the dictionary disappear, the dictionary will disappear when mouse cursor is moved away from either text or dictionary
-
 
 7.2.0:
 NEW: Grayscale slider control for both hànzi and hànzi's grid on calligraphy worksheet (Print)
@@ -1779,8 +1809,6 @@ FIX: When word dictionary is activated (via Alt or option key (mac)) while using
 
 FIX: Hanzi color is not showing in youdao. Fixed now
 
-
-
 7.1.0: 
 NEW: Proofreading mode. Example use, when writing in HTML-based word processors, or when composing emails. With proofreading mode, pinyin/guides and spaces for hanzi are turned off, hanzi's size is restored to its original size, hanzi's color is reverted to original, and the dictionary is set to *sentence pop-up dictionary* (as opposed to *word pop-up dictionary*) in order to minimize hovering on Chinese words while proofreading; proofread more, hover less. All dictionary mode works while proofreading except *sentence inline dictionary*, just switch to other dictionary mode when dictionary mode is unintentionally (no harm on document) set to *sentence inline dictionary* 
 
@@ -1794,7 +1822,6 @@ FIX: On-demand word dictionary still checks for hotkeys (e.g., read-aloud hotkey
 
 UPDATE: Dictionary, new definitions
 
-
 7.0.0:
 NEW: Print calligraphy to printer or PDF. To use, right-click Chinese words separator's icon on the browser's toolbar, select Tools > Print
 
@@ -1802,14 +1829,12 @@ UPDATE: When *Exclude learned words from color* is active, and unintentional cli
 
 FIX: Corrected the hanzi frequency optimization
 
-
 6.10.1:
 OPTIMIZATION: 
 * Updating of hanzi's frequency now performs fewer I/O operations
 * When whole page is detected as non-Chinese, text nodes are not processed
 
 FIX: Frames of calligraphy strokes is not aligned on a site. This is fixed now
-
 
 6.10.0:
 NEW: When letter s (default shortcut key for text-to-speech, a.k.a. read-aloud) is pressed the second, third  time around (and so on), it will make the succeeding sound be played at 80% of the previous speed. The sound will revert to its original speed 3 seconds (not too short, not too long) after the last press of letter s, or when listening to new word/phrase/sentence. If need to always start at 80% or 70% of the normal speed when speech is played, set the read-aloud speed to 20% slower or 30% slower respectively in the Options screen.
@@ -1823,7 +1848,6 @@ UPDATE: Dictionary's bigger font size, the difference between bigger (23px) and 
 FIX: Sentence dictionary and word dictionary sometimes appear at the same time. This is fixed now. When changing dictionary mode, the previous dictionary mode is immediately deactivated
 
 FIX: Single character shortcuts were activating even when modifier keys are used, e.g., spreadsheet-compatible copy (letter c) is activating when Ctrl+C is used. This is fixed now, single key shortcuts activate only when a single key is pressed.
-
 
 6.9.0
 UPDATE: Added shadow to notification's box
@@ -1859,10 +1883,8 @@ For multiple character words with neutral tone, e.g., 什么 shen2 me5. Both of 
 shen2 me5
 shen2 me
 
-
 6.8.0
 NEW: Dictionary might not work when hovering over the characters that are in text boxes. When this happen, press *Alt* or *option key* (mac) first, then hover the mouse cursor on Chinese character. The dictionary can be used to proofread what you typed
-
 
 6.7.0
 NEW: Sentence mining sites can now be accessed quickly with single key shortcuts. There are 12 default sentence mining sites, the first nine can be accessed quickly by pressing 1 to 9. These shortcuts can also be changed in the Options screen
@@ -1895,7 +1917,6 @@ Changing font for Hànzi takes effect on Chinese text only. Other languages' tex
 
 FIX: Some characters have incorrect type (traditional vs simplified). This is fixed now
 
-
 6.4.0 NEW: Clipboard functionalities
 To access, right click the Chinese words separators' icon on the browser's toolbar, then select from the following:
 
@@ -1916,14 +1937,12 @@ Aside from being able to instantly convert pages system-wide from the Options sc
     Page: Traditional to Simplified
     Page: Simplified to Traditional
 
-
 6.2.0 NEW: Copy dictionary's definitions to clipboard.
 Shortcuts:
 c: Copy the definitions in the same order the words appear
 C: Copy the definitions as sorted by pīnyīn
 
 Definitions is copied to clipboard as tab-delimited, this is spreadsheet-compatible
-
 
 6.1.0 NEW: Word dictionary mode
 In contrast with on-demand word dictionary mode, the word dictionary mode does not require holding the Alt or option (mac) key
@@ -1942,11 +1961,9 @@ UPDATE: Made the pīnyīn in the dictionary color blue
 UPDATE: Updated the HSK levels of the traditional characters
 FIX: Inline dictionary does not disappear when the mouse cursor is outside the dictionary. This is fixed now
 
-
 6.0.0 NEW: Character dictionary. This dictionary mode shows both the meaning and calligraphy animation of the character
 
 To activate/deactivate character dictionary, double-press *Alt* or *option* (mac) key 
-
 
 5.6.1
 UPDATE: Made the example sentence be complete of HSK levels and tones
@@ -1959,7 +1976,6 @@ FIX: Inline dictionary have wrong margin on certain site. This is fixed now
 UPDATE: Added smaller and smallest sizes to Guide's size options. Some language learners might prefer to preserve the aesthetics of no space between hànzis when pīnyīn guide is added to the hànzi; the smallest size (and to some extent, smaller size; longest pinyin zhuang cannot fit in one hanzi when guide's size is smaller) can facilitate that aesthetics. The Guide's default size is small.
 FIX: YouTube, the title and comments of previously watched Chinese video appeared on next  (non-Chinese) video. This is fixed now, the title and comments of the previous video does not carry over to the next video.
 FIX: Some text have indentions when translated to sidebar/tab. This is fixed now, no more indentions
-
 
 5.4.1 FIX: Corrected tone color indicator in Options screen
 
@@ -1991,7 +2007,6 @@ NEW: Made Chinese words separator work in translation sidebar
 
 Must allow access to microphone when prompted
 
-
 4.10.4 UPDATE: Removed duplicate definitions
 
 4.10.3 FIX: Automatic read aloud for word/phrase was not working when dictionary is turned off. This is working now, automatic read-aloud for word/phrase can be used even when the dictionary is turned off
@@ -2005,7 +2020,6 @@ UPDATE: Updated the criteria for garden-path detection, can detect more garden-p
 NEW: Hovered word/phrase can now be automatically read aloud. This is turned off by default. This can be changed in the Options, or can be assigned of keyboard shortcut in:
 
 chrome://extensions/shortcuts
-
 
 4.9.0 
 NEW: Optimized rotating colors for dark mode and light mode
@@ -2026,7 +2040,6 @@ NEW: Additional font choices for guide/pīnyīn. Default font to Optima
 NEW: Notification when hànzi's font size is changed via keyboard shortcut
 FIX: When the dictionary is in pop-up mode and the page is scrolled, the dictionary keeps floating on screen. This is fixed now, the dictionary no longer floats on screen while scrolling
 
-
 4.8.3 Minor enhancement: When dictionary's top goes above (which can't be seen) the screen, the dictionary's top is re-adjusted and the dictionary's height is shrank so there is no need to manually scroll up the page. However, it would still be best for the language learners to scroll up the page, then the dictionary will appear below the sentence instead, this will also give more screen real estate for the dictionary.
 
 4.8.2 Minor enhancement: Adjusted dictionary's height so that if the sentence fits exactly in the sentence dictionary, the scrollbar won't appear
@@ -2034,7 +2047,6 @@ FIX: When the dictionary is in pop-up mode and the page is scrolled, the diction
 4.8.1 FIX: Pop-up dictionary sometimes go to the right edge of the browser. This is fixed now
 
 4.8.0 NEW: Additional dictionary mode: On-demand word dictionary. For advanced Chinese language learners who occasionally need a dictionary, set the dictionary mode to *On-demand word dictionary*. In this mode, the dictionary will only activate when needed. To activate, just hold the Alt or option key first, then hover on any Chinese texts.
-
 
 4.7.0
 NEW: Font selection for guide/pinyin
@@ -2044,7 +2056,6 @@ NEW: Font size for guide/pinyin
 FIX: Color-based tones was not working on sites that wraps individual hànzis in their own tags, most of those sites are sentence mining sites or parallel text sites. This is fixed now.
 UPDATE: Emphasized tone mark for pīnyīn (and stand-alone tone mark) by using different font
 
-
 4.6.0
 NEW: Color-based tones; Hanping tones color scheme for dark mode, Pleco tones color scheme for light mode
 NEW: Additional voice speed choice for read aloud
@@ -2052,7 +2063,6 @@ NEW: Additional voice speed choice for read aloud
 4.5.1 
 FIX: On hànzi font size of 2.5x and 3x, when pīnyīn is under the hànzi, the pop-up (not the inline) dictionary don't have enough space between it and the pīnyīn, it even obstructed 20% of the bottom part of the pīnyīn, making the pīnyīn a bit unreadable. This problem is corrected now
 NEW: Speaker emoji for read aloud in Chinese words separator's context menu
-
 
 4.5.0
 NEW: Read aloud for right-clicked or highlighted text. After highlighting and right-clicking the text, select Chinese words separator > Read aloud "东西..."
@@ -2062,7 +2072,6 @@ UPDATE:
  * improved line spacing
 NEW: Speaker emoji for read aloud in Chinese words separator's context menu 
 FIX: Corrected reactivation of dictionary when using keyboard shortcut
-
 
 4.4.2 HOTFIX: Names with dots received tones that are for the hànzi, this causes wrong tones for the last one or two hànzi, which gets displayed as undefined. This is fixed now. Dots receive neutral tone.
 
@@ -2085,7 +2094,6 @@ correct tones:
 金 = 1
 
 Fixed, names with dots have have correct tones now.
-
 
 4.4.1
 NEW: Notification for Exclude learned words from color
@@ -2123,7 +2131,6 @@ Paste this in Chrome's address bar to assign keyboard shortcuts to Chinese words
 
 chrome://extensions/shortcuts
 
-
 4.3.0 NEW: Keyboard shortcuts can be assigned to Chinese words separator's functionalities. Here are the 4 default shortcuts:
 
 Alt+S / option+S = Cycle Separating colors (Rotating colors, HSK-based, Original)
@@ -2136,7 +2143,6 @@ The keyboard shortcuts for the other functionalities of Chinese words separator 
 chrome://extensions/shortcuts
 
 The 4 default shortcuts can also be changed from the link mentioned.
-
 
 4.2.2 
 FIX: Removed duplicate definitions
@@ -2156,12 +2162,10 @@ It will be tokenized as 不知 书
 
 FIX: Made learning notification's size uniform on all sites
 
-
 4.2.1
 FIX: Excluded some (not all) repeating words from garden-path detection, e.g., 哈哈哈哈
 FIX: Granular dictionary was not listing all possible words from a compound word/phrase when hovering the first hànzi of the compound word/phrase, 要不是 only shows 要不是 and 要. It does now, hovering over 要 of 要不是 now lists all of these: 要不是, 要不, 要
 NEW: Changed the *Exclude hànzi-based links* to *Exclude hànzi-based links/buttons*. Some buttons have fixed heights too, height-affecting options such as Pīnyīn and Hànzi font size makes the page looks messy when the buttons' size are changed
-
 
 4.2.0 
 NEW: Detection of possible garden-path words. Garden-path words are enclosed in a box.
@@ -2197,7 +2201,6 @@ Removed:
 4.0.0 NEW: Granular (phrase/word) dictionary
 
 Default is sentence dictionary. Use granular dictionary if you need to lookup the meaning of the individual characters/words of compound words or phrases. To activate granular dictionary, hold the *alt* or *option* key while hovering the mouse on compound words or phrases
-
 
 3.4.0 NEW: Dictionary settings can be previewed in Options screen. Can see the word's definition in word statistics
 
@@ -2248,7 +2251,6 @@ Màijīntǎ diànnǎo
 
 Likewise, some pop-up dictionaries still displays it as "Mài jīn tǎ diàn nǎo", it is up to the developers of other pop-up dictionaries to make their pīnyīn more readable by adding word boundary
 
-
 2.10.0 NEW: When tagging learned words, it can now be verified by inputting the pīnyīn. This is not enabled by default, this can be changed in Options screen
 
 2.9.0 NEW: Words or phrases that are commonly worded or phrased together are now grouped together, for instance, the following examples will be highlighted/spaced as a compound word or as one whole phrase, courtesy of CedPane's dictionary
@@ -2271,7 +2273,6 @@ https://github.com/ssb22/CedPane
 https://raw.githubusercontent.com/ssb22/CedPane/master/cedpane.txt
 https://ssb22.user.srcf.net/cedpane/
 
-
 2.7.0
 NEW: Allow user to add a Chinese sentence mining site right from the context menu of a website, more convenient than adding it manually to Option's screen
 NEW: Added the following Chinese sentence mining sites to the Option's button for Add Recommended Sentence Mining Sites:
@@ -2287,11 +2288,9 @@ NEW: Added the following Chinese sentence mining sites to the Option's button fo
 * Bing Dictionary
 * ChineseBoost
 
-
 2.5.0 
 NEW: Option to allow adding Chinese sentence mining sites
 NEW: Allow to toggle learned hànzi from the context menu if the left click event is already used by the website
-
 
 2.4.0 NEW: Chinese sentence mining functionality when the Chinese language learners right-clicks a Chinese word and choose this action from the context menu: *Mine Chinese sentences for ..*
 
