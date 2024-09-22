@@ -1,6 +1,46 @@
 <div style="width: 80vw">
 
 <pre style='white-space: pre-wrap'>
+8.24.84.2480:
+UPDATE: Pop-up menu: Renamed *Hoverless video dictionary* to *Video settings etc*
+UPDATE: Dictionary: Should sort first the typical use of 樂|乐, which is le4
+FIX: Dictionary: When text cursor is inside the text box, and when the dictionary is positioned at the right side, pressing Escape key was not restoring the text's cursor position. This is fixed now
+FIX: Learning list: All learned's link disappears when its count is incremented or decremented. This is fixed now
+FIX: Page: Dynamically-loaded text was not being applied of annotation when some settings are toggled. This is fixed now
+
+8.24.84.2470:
+UPDATE: Dictionary: New words
+FIX: Dictionary: Not able to resume the editing of text in the text box when the mouse cursor is first moved inside the dictionary before making the dictionary disappear. This is fixed now, editing of text can be resumed even if the mouse cursor is moved inside the dictionary
+FIX: Dictionary: The offline sentence miner was not showing for a hanzi when offline sentence miner is first imported. This is fixed now
+
+8.24.84.2461: FIX: Recall: Remember 3 links functionality was not working. This is fixed now
+
+8.24.84.2460:
+UPDATE: Dictionary: Pressing Escape key can now close the dictionary
+UPDATE: Tag-less word dictionary: No longer reloads the tab anymore
+UPDATE: Page: Disabling the extension is now removing the tags
+FIX: Dictionary: Text boxes loses focus when the dictionary pops up and disappear. This is fixed now, the dictionary refocuses the text box's last cursor position when the dictionary closes
+FIX: Dictionary: When used in text boxes, the position is incorrect when the content of the dictionary dynamically changes. This is fixed now
+
+8.24.84.2450: UPDATE: Learning list: Added link to statistics screen
+
+8.24.84.2441:
+FIX: Recall, Rewrite: The hanzi was not visible when repeating the study. This is fixed now
+FIX: Learning: Was firing multiple times when doing repeated disabling/enabling of extension. This is fixed now
+
+8.24.84.2440:
+UPDATE: Page, Dictionary: Added a shortcut icon that can quickly disable/enable the extension
+FIX: Dictionary: English locator for Glosbe sentence miner was incorrect. This is fixed now
+
+8.24.84.2431:
+FIX: Page: When converting the page directly to pinyin(or zhuyin), some words have wrong conversion, e.g., shuì le jiào (睡了觉) was converting as shuì le júe. This is fixed now
+FIX: Dictionary: On some sites, both Offline sentence miner's Chinese sentence (when separating color is Original) and Character other information does not have a good contrast when the dictionary is in dark mode. This is fixed now
+
+8.24.84.2430:
+UPDATE: Dictionary: Option to show character's other information
+FIX: Dictionary: When using search in the dictionary and its offline sentence miner is used, when clicking on a word in the sentence, the tooltip was appearing, it should not appear. This is fixed now
+FIX: HSK-graded reader: Should not show `Highlighted is null%`. This is fixed now
+    
 8.24.84.2420:
 UPDATE: Dictionary: When importing other language's definitions, and there's an invalid data, the line number of the invalid data is now shown in error notification, including the data itself
 FIX: Dictionary: Selecting text while dictionary is at the right side was not showing the tooltip. This is fixed now
