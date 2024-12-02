@@ -1,6 +1,76 @@
 <div style="width: 80vw">
 
 <pre style='white-space: pre-wrap'>
+8.24.84.2590:
+UPDATE: pin1yin IME: Typing the word 8 times will mark the word as learned. Disabled by default, can be enabled in Settings screen, the learned typing count (8) can also be changed
+UPDATE: pin1yin1 IME: Configurable shortcut for activating/deactivating IME, default is Ctrl+Alt+P (^⌥P on Mac). Can be set in Settings screen
+UPDATE: pin1yin1 IME: Pressing spacebar now defaults to inserting the English word to text box if there are no Chinese words that matches the typed English word
+UPDATE: pin1yin1 IME: When the definition cannot fit in one line, the right arrow key can now be used to expand the definition instead of using the mouse
+UPDATE: pin1yin IME: Slangs are now included, AA zhi4, aa zhi4, AAzhi4, aazhi4, all produces AA制
+UPDATE: pin1yin IME: The embedded Google, DeepL, Bing translation can now be passed to the IME's textbox's value
+UPDATE: Dictionary search: Can now change the keyboard shortcut in Settings screen, default is Ctrl+Alt+S (^⌥S on Mac)
+UPDATE: Page: Added more fonts selection
+FIX: pin1yin1 IME: Should not activate on pinyin text box of learned verifier. This is fixed now
+FIX: Dictionary: Compound words should show its shortest word too, sunflower should show both sunflower and sun, not just sunflower. This is fixed now
+FIX: Page, Dictionary: Corrected 2nd tone mark of zhuyin
+FIX: CWS: Learning here: Page should only listen to events when the website is set to learned from
+
+8.24.84.2581:
+FIX: My Setup: Some of the settings were not effecting when My Setup is restored. This is fixed now, all the settings in My Setup is restoring now
+FIX: pin1yin IME: Netflix's search box was disappearing after typing text. This is fixed now, Netflix's search box no long disappear after typing with pin1yin IME
+FIX: pin1yin1 IME: Newly added word (from tapping other Chinese words in the dictionary) was not highlighting when hovered with mouse or tapped (when on mobile). This is fixed now, the newly added word is now highlighting too
+FIX: pin1yin1 IME: When swiping to the left to navigate previous sentences from Offline sentence miner, the word is being chosen instead of being able to navigate previous sentences. This is fixed now, swiping to the left in example sentences won't cause the word to be chosen
+FIX: pin1yin1 IME: When navigating the example sentences from Offline sentence miner, the whole definition it belongs to was highlighting. This is fixed now, no more highlighting
+FIX: pin1yin1 IME: The dictionary was not repositioning when its bottom exceeds the browser's bottom. This is fixed now, the dictionary repositions itself accordingly
+
+8.24.84.2580:
+UPDATE: CWS: Can now set if the learner want to learn Chinese from a website or not. This is enabled by default, can be changed in CWS toolbar pop-up menu
+FIX: pin1yin1 IME: The dictionary preview of tㄗㄜext typed by the user can be barely seen on some websites when using dark mode dictionary. This is fixed now
+FIX: pin1yin IME: When translator is used while the IME is active, only the partial matching word from the full text (typically compound word) that was typed was being passed. This is fixed now, the full text typed is passed to translator
+FIX: Dictionary: Some words (from English to Chinese lookup) were missing due to words with diacritics had overwritten the matching words with no diacritics. This is fixed now, missing words are restored
+
+8.24.84.2570:
+UPDATE: Dictionary: Optimized setting of familiarity 
+UPDATE: Settings: Changed settings can now be saved to My Setup. To use, scroll down to the bottom of Settings page
+UPDATE: pin1yin IME: Ban4fa3 now matches ban4fa3, phones usually starts with capital letter automatically
+FIX: pin1yin1 IME: The dictionary was not correctly positioned when pin1yin1IME is used on complex text boxes. This is fixed now
+FIX: pin1yin1 IME: The keyboard shortcuts for dictionary was being captured by the text box if the previously focused element is a text box. This is fixed now
+FIX: Familiarity: Was not updating when using word dictionary. This is fixed now
+
+8.24.84.2560:
+UPDATE: pin1yin1 IME: It now works on complex text boxes, if it doesn't work, there's an option to copy the text to clipboard as a fallback
+UPDATE: pin1yin1 IME: Can now use mouse to select from the dictionary
+UPDATE: pin1yin1 IME: Can now also select the word other mentioned words in the definition
+
+8.24.84.2550:
+NEW: pin1yin1 IME: To use, enable this setting in CWS toolbar pop-up: ⌨️ pin1yin1 IME
+FIX: Word dictionary (when at right side): Was only showing the first character of compound words on button of *Show more information when on right*. This is fixed now, the compound word is now showing in the button.
+
+8.24.84.2540:
+UPDATE: Dictionary Search: Can now search with number-toned pinyin, e.g., pin1 yin1, dian4 nao3, pin1yin1, dian4nao3. Searching by toneless pinyin is still not supported
+UPDATE: Dictionary (when at right side ➡️): There's now a keyboard shortcut ('b') that shows more information about the word, the keyboard shortcut can be changed in Settings screen
+UPDATE: Pop-up menu: Moved Tag-less word dictionary to Ways to use CWS
+FIX: Dictionary: Pressing escape key hides the dictionary, but it was not clearing the manually selected text. This is fixed now
+FIX: Dictionary: Some characters had wrong components, e.g., 龟 was shown having components of ⺈ and 电. 龟 is a base character, it has no component characters. This is fixed now
+FIX: HSK: Unknown HSK's percentage was not showing. This is fixed now
+
+8.24.84.2530:
+UPDATE: Video: Added transparent black background color to English subtitle in YouTube so that it can cover the burned-in subtitle
+FIX: Dictionary: The text color of the translation area in some sites is barely visible. This is fixed now
+FIX: Dictionary: The button for `Show more information when on right` was flickering when the dictionary's content is being changed. This is fixed now, no more flickering
+FIX: Dictionary: Button for `Show more information when on right` should adapt to the background color of the dictionary. This is fixed now
+FIX: Dictionary: Button for `Show more information when on right` was not disappearing when switching to character dictionary. This is fixed now
+
+
+8.24.84.2520:
+UPDATE: Dictionary: When at the right side, there's a button that can show the word's other information
+UPDATE: Recall: Answering with alternative pronunciation in pinyin is now accepted
+UPDATE: Video: Subtitle's pinyin annotation is now nearer to the hanzi
+FIX(Safari): Dictionary: The dictionary was positioned at top left corner when it shows the definitions of highlighted words from burned-in subtitle in the video. This is fixed now, the dictionary is now positioned where the mouse cursor is
+FIX: Calligraphy Printer: Row was wrapping when printed on A4 paper. This is fixed now
+FIX: Calligraphy Printer: The X of the hanzi's box was dark when printed. This is fixed now, the gray scale of the X of the box in print is now same as what is in screen
+FIX: Parallel Text: Sometimes the translated text of a next phrase and the phrase next to it has no space between them. This is fixed now
+
 8.24.84.2510:
 UPDATE: Dictionary: When on the right side, it can now show more information about the word. To use, enable the `Show more information when on right` settings
 UPDATE: Dictionary: When ellipsis is long-pressed (or right-clicked) on the second time, the character's other information will be shown even when the `Character other information` settings is unchecked
