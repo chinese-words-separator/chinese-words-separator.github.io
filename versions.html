@@ -1,8 +1,24 @@
 <div style="width: 80vw">
 
 <pre style='white-space: pre-wrap'>
+8.24.84.2640:
+UPDATE: Dictionary search, pin1yin1 IME: Shortcuts can now use other keyboard characters, e.g., '/', '\', '-', '+', and even spacebar
+FIX: HSK: HSK-graded list of pages was not working. This is fixed now
+FIX: Keyboard shortcut: If the functionality's keyboard shortcut is set to Alt+S only, but the user pressed Ctrl+Alt+S, it was activating the functionality. This is fixed now, the functionality is activating only when the pressed keys exactly matched the settings
+FIX: Dictionary: Acronym's parenthesized long form was not indexed. The long form 'global positioning system' and parenthesized acronym 'GPS' in 'global positioning system (GPS)' are both indexed. However, in 'GPS (Global Positioning System)', only the GPS acronym is indexed, the parenthesized long form 'Global Positioning System' was not indexed. This is fixed now, the acronym's parenthesized long form is now indexed also
+FIX: Page: CWS was not parsing when the hanzi name with dot marker doesn't have dot marker in its pinyin. This is fixed now, parser works even when the pinyin doesn't have dot marker
+
+8.24.84.2630:
+UPDATE: Dictionary: Acronyms can now be searched, e.g., NBA. 
+UPDATE: Dictionary: After clicking anywhere in the dictionary and then pressing Escape, the text box regains the focus, that is, typing can be resumed
+FIX: Dictionary search: Words matcher was not consistent with pop-up dictionary and pin1yin1 IME's words matcher. This is fixed now, pop-up, search, pin1yin1 IME are now consistent with each other
+FIX: My Setup: Some settings were not effecting. This is fixed now
+FIX: pin1yin1 IME: IME to clipboard's setting is only effecting on page load, setting it in CWS toolbar pop-up menu was not effecting to the pages immediately, need to reload the page. This is fixed now, it now immediately effects to pages when it is changed, no need to reload the page
+FIX: pin1yin1 IME: Key modifiers were closing the dictionary, so using shortcuts such as Control(command)+C to copy the dictionary content was not possible. This is fixed now, pressing key modifiers no longer closes the dictionary
+FIX: pin1yin IME: Was not working when using character dictionary. This is fixed now
+
 8.24.84.2620:
-UPDATE: Dictionary: Changed the 🧭 emoji to ⬇️  emoji. Added an option that makes the dictionary appear above the current text instead of below (default). This can be set by changing the dictionary location to ⬆️ (default is ⬇️) in CWS toolbar pop-up settings
+UPDATE: Dictionary: Changed the 🧭 emoji to ⬇️  emoji. Added an option that makes the dictionary appear above the current text instead of below (default). To use this, on CWS toolbar pop-up settings, change ⬇️ to ⬆️
 FIX: Dictionary: On some sites, when pin1yin1 IME has no matching results, it was showing scrollbar to pop-up window. This is fixed now
     
 8.24.84.2610:
