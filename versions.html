@@ -1,6 +1,29 @@
 <div style="width: 80vw">
 
 <pre style='white-space: pre-wrap'>
+8.24.84.2671: FIX: pin1yin1 IME: Cannot search words with apostrophe, e.g., "can't find". This is fixed now, pin1yin1 IME can now search words with apostrophe
+
+8.24.84.2670:
+OPTIMIZATION: HSK-graded pages list: Created index
+UPDATE: Dictionary: Created Chinese-English sentence locator for dong-chinese.com
+UPDATE: Dictionary: Improved stemmer, matches more words now
+UPDATE: Sentence miner: Added dong-chinese.com
+UPDATE: Sentence miner: Configuration is saved as JSON now instead of plain text
+UPDATE: Respeak: Added `At least ___ %` filter for HSK
+FIX: Word dictionary: Was not able to scan words before or after of an esoteric Chinese character or emoji. This is fixed now, dictionary can now scan words even if it is adjacent to an esoteric Chinese character or emoji
+FIX: HSK-graded pages list: Corrected the presentation for HSK All
+
+8.24.84.2660:
+UPDATE: Settings: `Show _ sentence miners`, added 'all' option to existing 3 to 9 options
+UPDATE: pin1yin1 IME: Now works on most text boxes
+UPDATE: pin1yin1 IME: Visual indicator (middle dot) is shown in the dictionary when user presses shift+spacebar
+UPDATE: Dictionary: Improved character decomposition accuracy
+
+8.24.84.2650:
+NEW: PDF: Added a link to a PDF viewer where CWS's dictionary will work
+FIX: pin1yin1 IME: When used in Notes editor, the IME's lookup dictionary was positioning at wrong vertical position when the current line in the editor is empty. This is fixed now, the lookup dictionary is now positioned just below the blinking cursor even when the line is empty
+FIX: Some text boxes were annotated with pinyin and word separator, annotations doesn't fit text boxes. This is fixed now, text boxes are not annotated anymore
+
 8.24.84.2640:
 UPDATE: Dictionary search, pin1yin1 IME: Shortcuts can now use other keyboard characters, e.g., '/', '\', '-', '+', and even spacebar
 FIX: HSK: HSK-graded list of pages was not working. This is fixed now
