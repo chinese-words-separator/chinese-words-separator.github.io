@@ -1,6 +1,27 @@
 <div style="width: 80vw">
 
 <pre style='white-space: pre-wrap'>
+8.24.84.2700:
+UPDATE: Dictionary: When adding words to learning tracking sheet or clipboard, the learner can now set how many definitions to include for words with multiple definitions, default is all
+UPDATE: Dictionary: Can now set the dictionary location when it is used inside more information page
+FIX: Offline sentence miner: The respeak icon was not aligned. This is fixed now
+
+8.24.84.2690:
+UPDATE: Dictionary search: It's now allowed to use ㄓㄨˋㄧㄣ (zhuyin/bopomofo) keyboard (to use on Apple: ^⌥↑Z, non-Apple: Control+Alt+Shift+Z)
+UPDATE: Dictionary: The heart icon is now symmetrically positioned at the top right corner of the dictionary
+UPDATE: Page: Completing second word (B) from AAA B to AA AB is now allowed. Before, only AAA B to A AAB is allowed, the new rule now allows to transform 英文名 字 to 英文 名字
+UPDATE: Learned marker: Has now an option to not allow click for marking/unmarking learned
+UPDATE: Recall: When zhuyin keyboard is active, the zhuyin pronunciation answers dropdown will not be shown, forcing the learner to really recall the word
+UPDATE: IME: Pressing Up key (or Shift+Tab) when at first word, will select the last word. Pressing Down key (or Tab) when at last word, will select the first word
+
+8.24.84.2680:
+NEW: Zhuyin keyboard layout: Can now type with zhuyin. Shortcut to switch between Zhuyin and ABC keyboard can be set in Settings
+UPDATE: Settings: Made keyboard shortcut (for IME and dictionary search) detector more robust. Previously, shortcuts that produces accented characters can't be made as shortcut, now it can be
+UPDATE: pin1yin IME: Second matching English that is unrelated to the first match are now excluded, e.g., typing/searching 'went' will not show 'we' anymore
+FIX: Learner-preferred definitions: Line that starts with comment symbol '#', are now ignored, will not raise an error
+FIX: pin1yin1 IME: Words that ends with numbers are now searchable, e.g., 'area 51' 
+FIX: Dictionary: Sometimes the dictionary is not working in DeepL website. This is fixed now
+
 8.24.84.2671: FIX: pin1yin1 IME: Cannot search words with apostrophe, e.g., "can't find". This is fixed now, pin1yin1 IME can now search words with apostrophe
 
 8.24.84.2670:
