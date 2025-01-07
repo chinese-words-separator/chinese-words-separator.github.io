@@ -1,6 +1,22 @@
 <div style="width: 80vw">
 
 <pre style='white-space: pre-wrap'>
+8.24.84.2720:
+UPDATE: Sentence mining: Google-assisted sentence mining is now rearranged from `site:sentenceMiningSiteHere chineseWordHere` to `chineseWordHere site:sentenceMiningSiteHere`, e.g., `认识 site:www.bbc.co.uk/learningenglish/chinese/features/todays-phrase`
+FIX(Safari mobile): Offline Sentence Miner: When page is phoneticized with pinyin or zhuyin, tapping the pinyin/zhuyin word in the offline sentence miner was not working. This is fixed now, can now add word to the dictionary from the pinyin/zhuyin word of offline sentence miner
+FIX: Page: When on rotating color mode, the color of the pinyin (and English annotation) was using the original color instead of the rotating color. This is fixed now, the annotations are now inheriting the rotating color
+FIX: Selection tooltip: Pressing Escape key while in text box should remove the tooltip. This is fixed now
+FIX: IME: Activating browser's auto translate was translating the IME's typed word(s) indicator too. This is fixed now, IME's typed word(s) indicator is excluded from translation
+FIX: Calligraphy: Some characters were indicated as base character even when it has components, e.g., 踢 = 𧾷+易, 踟 = 𧾷 + 知. This is fixed now
+
+8.24.84.2714:
+FIX: Sentence dictionary: When on sentence mining sites, and when the page is in tagless mode, the sentence dictionary was not working. This is fixed now
+FIX: Sentence dictionary: When on right side, and when the page is in tagless mode, the active word was not showing in the show more information button. This is fixed now
+
+8.24.84.2713:
+FIX: Dictionary: Embedding browser's auto translation in the dictionary should apply CWS tags to the page even if the page's settings can be used in tagless mode; so that the page's Chinese text can be protected from browser's auto translation, and only the Chinese header embedded in the dictionary will be translated
+FIX: Dictionary: Stemmer was not working for some words, e.g., 'play' was not showing 玩. This is fixed now
+    
 8.24.84.2712: FIX: Dictionary: Embedded Google/DeepL/Bing translation was not working. This is fixed now
 
 8.24.84.2711:
