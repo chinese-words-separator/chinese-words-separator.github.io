@@ -1,6 +1,13 @@
 <div style="width: 80vw">
 
 <pre style='white-space: pre-wrap'>
+8.24.84.2730:
+UPDATE: Dictionary: New words
+UPDATE(Safari): Learned: Learned count is now shown as badge on CWS toolbar icon
+FIX: Character: Some characters were visually identified as having component characters, e.g., 麻, 梦, 艹, ⺼. This is fixed now, those characters are now identified as base characters. From AI: In the case of 麻, it's important to understand that the visual components that resemble 广 (roof) and 林 (forest) are likely coincidental or stylized choices in its evolution. These similarities are a result of the stylization of characters over time, not necessarily a reflection of their original structure or meaning. AI too: Why Visual Similarity Can Be Misleading: Chinese characters have undergone many changes over thousands of years, and as a result: *The modern form of a character may not reflect its historical origin. *A character may have been created by combining components that look alike but have no functional connection. For instance, 麻 appears visually like a combination of 广 and 林, but its original formation likely comes from a different source. 麻 might look like it's made of 广 and 林, but its actual history is linked to hemp, with plant fibers as the conceptual origin.
+FIX: Dictionary: Stemmer was aggresively shortening some words, e.g., 'refuse' was shortened as 'refus', then it is pronounced as 'refus' instead of 'refuse'. This is fixed now, 'refuse' is not shortened to 'refus' and is now pronounced as 'refuse'
+FIX: Dictionary: Browser's auto translation was effecting on character's other information. This is fixed now
+
 8.24.84.2720:
 UPDATE: Sentence mining: Google-assisted sentence mining is now rearranged from `site:sentenceMiningSiteHere chineseWordHere` to `chineseWordHere site:sentenceMiningSiteHere`, e.g., `认识 site:www.bbc.co.uk/learningenglish/chinese/features/todays-phrase`
 FIX(Safari mobile): Offline Sentence Miner: When page is phoneticized with pinyin or zhuyin, tapping the pinyin/zhuyin word in the offline sentence miner was not working. This is fixed now, can now add word to the dictionary from the pinyin/zhuyin word of offline sentence miner
