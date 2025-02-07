@@ -1,6 +1,35 @@
 <div style="width: 80vw">
 
 <pre style='white-space: pre-wrap'>
+8.24.84.2790:
+UPDATE: Calligraphy: Settings for calligraphy source and fallback
+FIX(Safari): Word dictionary: Not working in YouTube's subtitle. This is fixed now
+FIX: Calligraph IME: Some websites have a search box where the IME was not working. This is fixed now
+FIX: Calligraphy IME: Copy to clipboard was not working. This is fixed now, when the text is not inserted to text box or the text disappears, the selected Chinese character is now copied to clipboard when clipboard fallback is enabled, then the user can paste (Ctrl+V, command+V) the Chinese character from the clipboard
+FIX: Calligraphy IME: Right-click was showing the calligraphy IME. This is fixed now, right-click no longer shows the calligraphy IME, can only be shown with long-press
+
+8.24.84.2780:
+UPDATE: Dictionary: Improved stemmer accuracy
+FIX: IME: Should read aloud pinyin+toneNumber in Chinese pronunciation, dian4 was pronounced as 'Dianne four'. This is fixed now, dian4 is now pronounced as diàn
+FIX: Calligraphy IME: Instruction tooltip was blocking the dictionary. This is fixed now, the instruction is moved to toolbar pop-up
+FIX: Calligraphy IME: Was not working on some sites. This is fixed now, it's now working on some sites, but there are still some sites where it's not woring
+FIX: Character separator: Some characters were wrongly indicated as base character. This is fixed now, those characters can now be decomposed to their component characters
+FIX: Rewrite, Respeak: Dictionary was appearing on UI labels. This is fixed now, dictionary will only appear on UI labels when the Ctrl key is pressed
+
+8.24.84.2770: NEW: Calligraphy IME: Can now draw the character to input text
+
+8.24.84.2760:
+UPDATE: Ways to use CWS: Added check box for `Look up the Chinese words of English words as well`
+UPDATE: Dictionary Search: Moved the calligraphy candidates on top
+FIX: Dictionary: Root word of compound words was not showing. 'Superman' is showing both 'Superman' and 'super'; however, 'Iron Man' was showing 'Iron Man' only. This is fixed now, 'Iron Man' shows both 'Iron Man' and 'Iron'
+
+8.24.84.2750:
+UPDATE: Dictionary search (by drawing the character): From candidate words, double-tap a word to add word to search box and clear the canvas
+UPDATE: Calligraphy: Colors for radical component and current stroke can now be configured. The current stroke color also effects on pen color of handwriting in the dictionary search
+UPDATE: Sentence miner: Added omgchinese.com
+FIX: Dictionary: When dictionary is set to display on top of sentence/word and it is displayed at the bottom instead, the dictionary was producing blank space at the bottom of the dictionary when a word/character is expanded. This is fixed now, no more blank space at the bottom of the dictionary
+
+
 8.24.84.2740:
 UPDATE: Dictionary search: Can now search the character by drawing it
 FIX: Character: Some radicals were wrongly identified as having component characters by visual means. Characters should by decomposed by etymology, semantic, phono-semantic, or ideograph. This is fixed now, radicals are not decomposed into characters
