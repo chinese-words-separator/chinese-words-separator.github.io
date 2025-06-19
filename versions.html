@@ -1,6 +1,39 @@
 <div style="width: 80vw">
 
 <pre style='white-space: pre-wrap'>
+8.24.84.2840:
+UPDATE: Dictionary: To prevent the dictionary from showing the definition of the accidentally hovered word/phrase, hold Alt+Shift / option+shift while moving the mouse cursor
+UPDATE: Dictionary: By default, the dictionary shows the Chinese-English definition of Tony as `Tony tony (slang) hairdresser`. To see the English-Chinese translation of an English word that is also used as Chinese slang, hold the Shift key while moving the mouse cursor. For example, Tony will be shown as `托尼 Tuōní (name) Tony`
+UPDATE: Word dictionary: Only in the character dictionary that calligraphy is always shown. It can now be shown in word dictionary too, this can be enabled in Settings screen
+FIX: Dictionary: When the dictionary is at north position, and its height cannot fit in north position when one line definition will be expanded, the dictionary was not repositioning to the south of sentence. This is fixed now, the dictionary now repositions to the south position when its height cannot fit in north position when the one line definition will be expanded
+FIX: English-Dictionary: The word 'Chinese character' was showing the definitions of 'Chinese character', 'Chin', 'Chi'. This is fixed now, 'Chinese character' is now showing the definitions of 'Chinese character', 'Chinese'
+
+8.24.84.2832:
+FIX: Dictionary: When dictionary's location is set to north, and the hovered word/sentence in page is almost at topmost, the dictionary's content will not fit the pop-up sometimes, so the dictionary will be relocated to south, this is correct. However, when the dictionary's height is expanded (e.g., via one line definition), the dictionary relocates to north, causing the dictionary's height to become very short. The dictionary's location should be kept at south in this scenario.
+FIX: Dictionary: When direction's location is set to south, and the hovered word/sentence in page is almost at the bottom, the dictionary's content will not fit the pop-up sometimes, so the dictionary will be relocated to north, this is correct. However, when the dictionary's height is expanded (e.g., via one line definition), it blocked the first lines of the hovered word/sentence. The dictionary's top should be shifted up more in this scenario so the first lines of the hovered word/sentence will not be blocked. This is fixed now
+FIX: Dictionary search: Expanding the one line definition causes the dictionary's content to be cropped. This is fixed now
+FIX: Page, Dictionary: Some words have wrong segmentation. This is fixed now
+
+8.24.84.2831: FIX: Dictionary: When character dictionary is activated, the dictionary was not showing when *Learn sound first* mode preset is selected. This is fixed now, sentence dictionary is activated on *Learn sound first* mode
+
+8.24.84.2830:
+UPDATE: Toolbar pop-up: Added a way to save changes to settings to My Setup
+UPDATE: Dictionary: Setting dictionary to character mode is now taking effect permanently
+UPDATE: Dictionary: Doing right-click (long-press on mobile) on calligraphy now opens a page that shows the character's origin. The character origin website can be changed in Settings screen
+UPDATE: Dictionary: Additional grammar and vocabulary keywords
+
+8.24.84.2820:
+UPDATE: Dictionary: Improved English-Chinese mapping
+FIX: Dictionary: When it is on shown on top of sentence, and it is in one line mode, expanding the definition (definition that has ellipsis) was not repositioning the dictionary's top location, this was causing the page's succeeding sentences to be blocked by the dictionary's height expansion. This is fixed now
+FIX: Page, Dictionary: Enabled *Use unified unicodes* was not effecting on Mozilla's PDF.js website, this was causing the dictionary to not be able to detect the words in the page when the page has non-unified unicode characters. This is fixed now
+FIX: Page: Chinese words with dash in them were not annotated with pinyin nor color. This is fixed now
+FIX: Video settings etc: Youtube subtitle gets cropped when the font is too big. This is fixed now
+
+8.24.84.2810: 
+UPDATE: Calligraphy printer: Compound words now shows its radical characters
+UPDATE: Dictionary: Improved English to Chinese lookup
+FIX: Character dictionary: Was not working when toggled from sentence dictionary. This is fixed now
+    
 8.24.84.2810: 
 UPDATE: Calligraphy printer: Compound words now shows its radical characters
 UPDATE: Dictionary: Improved English to Chinese lookup
