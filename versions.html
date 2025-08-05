@@ -1,6 +1,30 @@
 <div style="width: 80vw">
 
 <pre style='white-space: pre-wrap'>
+8.24.84.2890:
+UPDATE: Page: Option to hide/unhide the guide (e.g., pinyin, bopomofo)
+UPDATE: Video, Dictionary: If the machine and browser has on-device AI, video subtitles and dictionary will use its translation functionality. Can be disabled when the learner still prefer to use the browser's built-in translator
+FIX: Video: Netflix sometimes show blank on non-native(English) subtitle, as non-native subtitles sometimes span two native(Chinese) subtitles. This is fixed now, the non-native subtitle is now shown repeated on the next part of the native subtitle's sentence to make the Chinese's next part of the sentence having blank non-native subtitle
+
+8.24.84.2880:
+UPDATE: Video: Netflix English subtitle is now under the Chinese subtitle instead of being shown in notification
+UPDATE: Dictionary: Can now be configured to hide learned definitions only
+
+8.24.84.2870:
+UPDATE: Page: The Complete First segmentation override can now be customized with prefix rule. Example, the rule `面对 水 ^浮出` makes 水 面对 become 水面 对, only when 水 is prefixed with 浮出. Thus, 浮出 水 面对 becomes 浮出 水面 对, which in turn becomes 浮出水面 对
+FIX: Page: Some person names have missing pinyin annotation when using Exclude learned by character. This is fixed now
+FIX: Dictionary: Words like PO文 have wrong tone color. This is fixed now
+FIX: Dictionary: Some English words were not findable if the stem of proper noun matches common noun, e.g., Keyes stems as key, searching key was matching Keyes instead. This is fixed now, key is now findable
+
+8.24.84.2860:
+UPDATE: Page, Dictionary: Separable verbs with two syllable objects are now recognized, e.g., 谈恋爱, 发脾气
+FIX: Page: Words mixed with non-Chinese characters in them were getting wrong tone, e.g., 3D打印, 4S店, PO文. Some words were getting wrong pinyin when using *Exclude learned by character* mode, e.g., 3D打印 shows up as 3 D D dǎ, it's missing yìn. These are fixed now
+
+8.24.84.2850:
+UPDATE: IME: Can now use the three translators to translate the typed English word, can be used when the word is not yet in the dictionary
+FIX: Page: *Exclude learned by character* was not working on words with Chinese dash character in them, e.g., 巴登－符騰堡州. This is fixed now
+FIX: Dictionary: Setting the dictionary's location to north was not effecting when dictionary search is active. This is fixed now
+
 8.24.84.2840:
 UPDATE: Dictionary: To prevent the dictionary from showing the definition of the accidentally hovered word/phrase, hold Alt+Shift / option+shift while moving the mouse cursor
 UPDATE: Dictionary: By default, the dictionary shows the Chinese-English definition of Tony as `Tony tony (slang) hairdresser`. To see the English-Chinese translation of an English word that is also used as Chinese slang, hold the Shift key while moving the mouse cursor. For example, Tony will be shown as `托尼 Tuōní (name) Tony`
