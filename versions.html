@@ -1,6 +1,39 @@
 <div style="width: 80vw">
 
 <pre style='white-space: pre-wrap'>
+8.24.84.2943:
+FIX: Popup: Some commands were not working due to some chrome API being unsupported on Android, thus selecting Beginner, Lower Intermediate etc were not working when using Android. This is fixed now
+FIX: Video: Line color is not showing on subtitle when zhuyin is displayed at left/right side of hanzi and English annotation is displayed on top of hanzi. This is fixed now, line color is now showing on subtitle even with the mentioned settings
+
+8.24.84.2942:
+FIX: Video: Subtitles's guide(e.g., pinyin) and line colors have wrong location when exclude learned by character is enabled. This is fixed now
+FIX: Page: Line colors has wrong location when guide's location is under and the guide's size is not set to small. This is fixed now, line colors has correct location regardless of guide's size
+
+8.24.84.2941:
+FIX: Video: Sentence dictionary was showing at wrong location when hovered on subtitle. This is fixed now
+FIX: Page: Exclude learned from guides was not hiding the guides due to conflict with line colors functionality. This is fixed now, despite the color on guide's line colors, it is now just affected by exclude learned from guides, the line color's color is intact even when exclude learned from colors is enabled. Line colors is now just treated as guide
+
+8.24.84.2940:
+UPDATE: Page: Can now use line colors on exclude learned by character
+FIX: Page: Even if the guide is set to be shown under, but if the `zhuyin at side` is checked (even if it is disabled), the guide displays on top instead. This is fixed now, the guide now displays under the hanzi when guide is set to under regardless of `zhuyin at side` settings
+
+8.24.84.2930:
+UPDATE: Page: Can now use both the guide(e.g., pinyin) and line color together under the hanzi
+UPDATE: Page: When a word is marked/unmarked as learned in a page, it is now also reflected on all other pages as well
+UPDATE: Page: When a word's familiarity is updated in a page, it is now also reflected on all other pages as well
+UPDATE: HSK-graded Pages: Now shows the English translation of the page's title if the computer supports on-device AI
+
+8.24.84.2921: FIX: Sentence dictionary: When dictionary's position is north, and when there's not enough space at north, it correctly repositions itself at south. However, it was showing the dictionary directly below the hanzi, the pinyin below the hanzi gets blocked by the dictionary. This is fixed now, the dictionary repositions itself below the pinyin when the scenario above happens
+
+8.24.84.2920: UPDATE: Page: Can now use line colors to segment words
+
+8.24.84.2910: UPDATE: Page: Learners can now add conditional rules when splitting word, e.g., '會長 得$' split rule will make '會長 得' become '會 長 得'. The suffix rule (denoted by suffix '得' followed by '$' sign) after the word to be split ('會長') means the word '會長' will be split only when it is suffixed with '得'. The '本本 ^一' split rule will make '一 本本' become '一 本 本'. The prefix rule (denoted by prefix '一' prepended with '^' sign) after the word to be split ('本本') means the word '本本' will be split only when it is prefixed with '一'
+
+8.24.84.2900:
+UPDATE: Page: Can now show the percentage of the dominant HSK of the sentence/phrase right after it
+UPDATE: Read offline, Calligraphy Printer: Can now enable the Chinese IME keyboard and Calligraphy IME in the page itself
+FIX: Video: YouTube subtitles that are multiple lines were becoming columns. This is fixed now, multiple lines becomes rows now
+
 8.24.84.2890:
 UPDATE: Page: Option to hide/unhide the guide (e.g., pinyin, bopomofo)
 UPDATE: Video, Dictionary: If the machine and browser has on-device AI, video subtitles and dictionary will use its translation functionality. Can be disabled when the learner still prefer to use the browser's built-in translator
