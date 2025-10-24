@@ -1,6 +1,19 @@
 <div style="width: 80vw">
 
 <pre style='white-space: pre-wrap'>
+8.24.84.2961:
+FIX: Dictionary: When Chinese Immersion by Hiding Definitions and Hide Learned Only are both active, clicking a visible word (a not yet learned word) was causing the word to be included in immersion weaknesses. Immersion Weaknesses should only include word with hidden definitions when both both Hide Definition and Hide Learned are active. This is fixed now
+
+8.24.84.2960:
+UPDATE: Dictionary: When one line definition is active, tooltip is shown on common words' character that tapping the character will show the rest of the common words
+UPDATE: Dictionary: Translators now works with Split View
+FIX: Page: HSK percentages annotation was shown in sentence mining sites. Removed HSK percentages annotation in sentence mining sites, as most sentence mining sites wraps each word in their own tags, which can cause the HSK percentage annotation to appear in each word
+FIX: Page: When switching to HSK & Familiarity mode, it only works when the last selected preset is from Beginner or Intermediate only, the rest causes HSK & Familiarity to not display the annotation (Familiarity). This is fixed now, HSK & Familiarity now shows the Familiarity annotation regardless of the last selected preset
+
+8.24.84.2950:
+UPDATE: Page: Can now use split rule that splits the word only when it does not end with a word. This split rule `过奖 !了$`, means split 过奖 only when it does not end with 了, e.g., 以前 你 获 过奖 吗 -> 以前 你 获 过 奖 吗. This 过奖 will not split: 你 过奖 了
+FIX: Page: Erroneous variants were counted as another pronunciation/meaning. This is fixed now, erroneous variants are not counted anymore, e.g., 野 will not be indicated as a word with multiple pronunciations/meanings
+
 8.24.84.2943:
 FIX: Popup: Some commands were not working due to some chrome API being unsupported on Android, thus selecting Beginner, Lower Intermediate etc were not working when using Android. This is fixed now
 FIX: Video: Line color is not showing on subtitle when zhuyin is displayed at left/right side of hanzi and English annotation is displayed on top of hanzi. This is fixed now, line color is now showing on subtitle even with the mentioned settings
