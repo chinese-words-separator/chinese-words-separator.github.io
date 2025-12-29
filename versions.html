@@ -1,6 +1,35 @@
 <div style="width: 80vw">
 
 <pre style='white-space: pre-wrap'>
+8.24.84.3040:
+OPTIMIZATION: Learning: Cache the learned count to local storage so we don't have to query the learned count from the database
+UPDATE: Parser: More separable verbs detection. 你在生谁的气呢 was separated as 你,在生,谁,的,气,呢, now it is separated as 你,在,生,谁,的,气,呢, with 生气 being marked as separable verbs
+UPDATE: Parser: Improved garden-path defaults
+
+8.24.84.3030:
+OPTIMIZATION: Read offline: Now only updates the frequencies of newly typed words or when the text is loaded from previously saved list of text
+FIX: Read offline: The frequency of existing words in the old text does not get updated anymore when the learner types new words, unless the newly typed word is same as existing word
+FIX: Page: Changing the page from tagless to a non-tagless mode was re-updating the frequencies. This is fixed now, the double re-updates is now prevented
+FIX: Learning List: Its summary section goes past the list's width on some sites. This is fixed now
+
+8.24.84.3020:
+OPTIMIZATION: Page: Optimized the detection of tags
+FIX: AI Assist: On Gemini, the Chinese text were being recursively annotated with pinyin, causing multiple nesting of pinyin annotations. This is fixed now
+FIX: AI Assist: The context phrase/sentence of offline sentence miner's words were wrong. This is fixed now
+FIX: Dictionary: When used in further lookup window and the dictionary's location is at right, the dictionary was covering most of the page's content. This is fixed now, the dictionary location is now using the location setting from *Dictionary location when inside of more information's page*
+FIX: Dictionary: The dictionary was not able to scan the text in iQIYI's subtitle. This is fixed now
+
+8.24.84.3010:
+UPDATE: AI Assist for Phrase/Sentence: Was just available via keyboard shortcut. This can now be accessed via taps. Double-tap the word in the dictionary, then tap the brain icon
+UPDATE: Statistics: The list is now occupying the whole page's height
+UPDATE: Statistics: There is now a confirmation box when marking learned words on list of Hard to Remember Words
+FIX: Dictionary: When using browser on non-Apple devices and there is a horizontal scrollbar, the dictionary was going past the bottom of the page. This is fixed now
+
+8.24.84.3001:
+FIX: Dictionary: When both tagless page and sentence dictionary are active, the context phrase/sentence column was missing when copying the definitions to clipboard or remembering word(s) to learning tracking sheet. The context phrase/sentence was missing on AI Assist For Phrase/Sentence too. This is fixed now
+FIX: Dictionary: hanziDB link's blue color was barely visible on dark mode dictionary. This is fixed now, removed the color, the link is just bolded and italicized
+FIX: Dictionary: When using browser on non-Apple devices, the dictionary sometimes goes past the vertical scrollbar. This is fixed now
+
 8.24.84.3000: UPDATE: Dictionary: When a character's definition is not available, its definition can now be looked up from a site (e.g., http://hanzidb.org/). The lookup site can be changed in Settings screen
 
 8.24.84.2990:
