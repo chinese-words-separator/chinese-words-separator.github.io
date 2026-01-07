@@ -1,6 +1,21 @@
 <div style="width: 80vw">
 
 <pre style='white-space: pre-wrap'>
+8.24.84.3070:
+OPTIMIZATION: Video: Optimized Prime Video's subtitle observer
+FIX: Video: Prime Video's subtitle is now centered when *Video Settings etc* is used
+FIX: Calligraphy Printer: The pin1yin1 IME now correctly updates word frequency based on user input. Previously, the frequency remained static while typing
+
+8.24.84.3060:
+UPDATE: Page: Added WDXL Lubrifonts in Settings screen
+UPDATE: Dictionary, Page: 生意 now shows the 'business' sense first
+FIX: Settings: Resolved an issue where changes to the AI Question Template and AI to Ask settings failed to save in real-time. This is fixed now, previously, users had to click out of the input box to trigger a save; these values now save immediately as they are updated.
+
+8.24.84.3050:
+UPDATE: Spoken correctly: Its count is now shown on pop-up menu and statistics screen
+UPDATE: Video: Dictionary and pinyin annotation is now working on Prime Video subtitles
+FIX: Page: When page is converted to traditional or simplifed, marking learned words was marking the original writing system of the word instead of the writing system that the page is converted to. Should mark learned words based on the writing system that is converted to. Should only use the original writing system if there is no conversion, or if the writing system being converted to is pinyin or zhuyin. This is fixed now
+
 8.24.84.3040:
 OPTIMIZATION: Learning: Cache the learned count to local storage so we don't have to query the learned count from the database
 UPDATE: Parser: More separable verbs detection. 你在生谁的气呢 was separated as 你,在生,谁,的,气,呢, now it is separated as 你,在,生,谁,的,气,呢, with 生气 being marked as separable verbs
