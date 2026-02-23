@@ -10,7 +10,8 @@ UPDATE: HSK-grader: When on Gemini and the page's HSK percentages is saved, it i
 UPDATE: pin1yin1 and ㄓㄨˋㄧㄣ IME: Are now undo/redo-compatible
 FIX: Dictionary: When On-device AI translator is available and enabled, and when the whole English page is translated to Chinese, the Chinese sentence/phrase to English translation (made by AI) in the dictionary was being translated back to Chinese. This is fixed now, the Chinese sentence/phrase to English translation does not get translated back to Chinese even when the whole English page is translated to Chinese
 FIX: Learning Tracking Sheet: LTS was not working, Google changed their OAuth URL. This is fixed now
-
+FIX: IME: There's an error in IME that was causing the cursor to jump to the end of text when the user is typing in the beginning/middle of a long text. This is fixed now, the cursor stays in place even if the text is long
+    
 8.24.84.3131:
 FIX: Web HSK: Don't allow 0% for filter
 FIX: Page HSK Percentages: Corrected the layout
