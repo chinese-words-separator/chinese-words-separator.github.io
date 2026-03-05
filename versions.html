@@ -1,6 +1,29 @@
 <div style="width: 80vw">
 
 <pre style='white-space: pre-wrap'>
+NEW: 🧩 On-device AI Popup Translator: In text boxes, you can now type English sentence in a popup textbox by pressing Control + Equal sign, and then the translation to Chinese is instantly previewed. When Enter key is pressed, the translation gets inserted into the text box you were currently in
+UPDATE: Dictionary: New words
+FIX: Dictionary: On Gmail, selecting Chinese text then clicking the CWS tooltip icon, the dictionary was not showing. This is fixed now
+FIX: Statistics: English-Chinese Dictionary should not show on buttons and labels
+FIX: Page: Marking learned words in the page should automatically effect on dictionary's checkboxes too
+FIX: 🧩 IME: Was not working on Notes. It is working on Notes now
+
+8.24.84.3170:
+NEW: 🧩 IME: If the computer and browser supports on-device AI, this will allow the user to have their typed text to be translated to Chinese. Example use, type this text:
+
+The quick brown fox
+
+Then add ^$ $^ boundaries around 'quick brown':
+
+The ^$quick brown$^ fox
+
+After typing $^, the enclosed 'quick brown' in ^$ and $^ will be translated to Chinese:
+
+The 快速棕色 fox
+
+UPDATE: Word dictionary: When the highlighted text is English, and the user press 'A' (shortcut for previous character), it will now go back one word to the left, it does not make sense to scan one English letter backward, it is less likely (here are the few though: maze->amaze, word->sword, pear->spear) to match another English word, unlike Chinese character which can still make sense when scanning back one character, all characters in Chinese have meaning
+FIX: English-Chinese dictionary: Enabling the *Lookup the Chinese words of English words as well* should set the dictionary to word dictionary automatically. English-Chinese dictionary works on word dictionary mode only
+
 8.24.84.3160:
 UPDATE: Dictionary: Can now see the hanzi as familiarity-colored
 UPDATE: Dictionary: Color list selection for dictionary's background color
