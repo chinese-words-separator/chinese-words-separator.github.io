@@ -1,10 +1,25 @@
 <div style="width: 80vw">
 
 <pre style='white-space: pre-wrap'>
+8.24.84.3200:
+UPDATE: Dictionary: Added Chinese+English locators for sentence mining from deckademy.com
+FIX: Word dictionary: Some words that are mixed of English word/letter and Chinese word were not showing. This is fixed now
+FIX: Page, Dictionary: Apostrophes were appearing on pinyin that starts with vowel even though they are preceded by a comma. This typically happened on idioms with comma. This is fixed now
+FIX: Video: When On-device AI translation's language is changed in settings, it was not automatically effecting on dual subtitles, need to reload the page. This is fixed now, no need to reload the page
+FIX: pin1yin1 IME: Word's frequency was not updating when the word is typed. This is fixed now, typing a word bumps its frequency
+
 8.24.84.3190:
 UPDATE: Dictionary: There is now an option to require Ctrl+Alt/control+option when hovering on words in input boxes
 FIX: Settings: Switching quickly between dictionary modes causes CWS to easily reach max write operations quota error. This is fixed now by using debouncing
 FIX: 🧩 On-device AI Translator Popup: Was not working in Shadow DOM-wrapped input boxes. This is fixed now, and is now working in Reddit's search input box
+
+8.24.84.3180:
+NEW: 🧩 On-device AI Popup Translator: In text boxes, you can now type English sentence in a popup textbox by pressing Control + Equal sign, and then the translation to Chinese is instantly previewed. When Enter key is pressed, the translation gets inserted into the text box you were currently in
+UPDATE: Dictionary: New words
+FIX: Dictionary: On Gmail, selecting Chinese text then clicking the CWS tooltip icon, the dictionary was not showing. This is fixed now
+FIX: Statistics: English-Chinese Dictionary should not show on buttons and labels
+FIX: Page: Marking learned words in the page should automatically effect on dictionary's checkboxes too
+FIX: 🧩 IME: Was not working on Notes. It is working on Notes now
 
 8.24.84.3180:
 NEW: 🧩 On-device AI Popup Translator: In text boxes, you can now type English sentence in a popup textbox by pressing Control + Equal sign, and then the translation to Chinese is instantly previewed. When Enter key is pressed, the translation gets inserted into the text box you were currently in
