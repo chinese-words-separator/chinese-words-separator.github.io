@@ -1,6 +1,14 @@
 <div style="width: 80vw">
 
 <pre style='white-space: pre-wrap'>
+8.24.84.3210:
+OPTIMIZATION: Page: Optimized words frequency counter
+UPDATE: Learning List: Words can now be marked as learned by tapping(long-press on mobile) the word on the sidebar, regardless of the settings of requiring tapping(long-press on mobile) on words to be marked as learned. Requiring tapping/long-press on words to be marked as learned are now just effecting on the page's content only
+UPDATE: Page: Links are now excluded from HSK labels. Can be changed in settings
+FIX: Dictionary: When familiarity is updated automatically, it does not effect on the familiarity selector boxes in the dictionary. This is fixed now, the updated familiarity is now reflected on familiarity selector boxes
+FIX: Sentence Dictionary: When on tagless mode, hovering on a word and the dictionary is shown afterwards, the word's familiarity was not updating even if the familiarity is set to automatically update. This is fixed now
+FIX: HSK-graded Pages: Chinese slang (e.g., Tony, word (slang for 我的)) that are purely alphabets were included in page's words count. This is fixed now, only words that are Chinese characters or at least with one Chinese character are counted
+
 8.24.84.3200:
 UPDATE: Dictionary: Added Chinese+English locators for sentence mining from deckademy.com
 FIX: Word dictionary: Some words that are mixed of English word/letter and Chinese word were not showing. This is fixed now
@@ -9,9 +17,9 @@ FIX: Video: When On-device AI translation's language is changed in settings, it 
 FIX: pin1yin1 IME: Word's frequency was not updating when the word is typed. This is fixed now, typing a word bumps its frequency
 
 8.24.84.3190:
-UPDATE: Dictionary: There is now an option to require Ctrl+Alt/control+option when hovering on words in input boxes
+UPDATE: Dictionary: There is now an option to require Ctrl+Alt/control+option when hovering on words in text boxes
 FIX: Settings: Switching quickly between dictionary modes causes CWS to easily reach max write operations quota error. This is fixed now by using debouncing
-FIX: 🧩 On-device AI Translator Popup: Was not working in Shadow DOM-wrapped input boxes. This is fixed now, and is now working in Reddit's search input box
+FIX: 🧩 On-device AI Translator Popup: Was not working in Shadow DOM-wrapped text boxes. This is fixed now, and is now working in Reddit's search text box
 
 8.24.84.3180:
 NEW: 🧩 On-device AI Popup Translator: In text boxes, you can now type English sentence in a popup textbox by pressing Control + Equal sign, and then the translation to Chinese is instantly previewed. When Enter key is pressed, the translation gets inserted into the text box you were currently in
