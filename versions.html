@@ -1,6 +1,39 @@
 <div style="width: 80vw">
 
 <pre style='white-space: pre-wrap'>
+8.24.84.3291:
+FIX: Dictionary: Characters that are separated from compound words should still have a context sentence/phrase, only the characters that are separated from a single character have no context sentence/phrase
+FIX: Dictionary: When the mouse cursor is not in the dictionary, the AI Assist should still work, as the sentence/phrase context can be determined from the hovered word outside the dictionary. Use it as a fallback
+
+8.24.84.3290:
+UPDATE: AI Assist: Handling of AI Assist shortcut (default is 'w') is now more robust, it can now reliably detect the context sentence/phrase of the word being inquired in AI. It can now also detect the context sentence of hovered word in offline sentence miner
+UPDATE: Video: Hanzi's English annotation that is 'classifier for sth' is replaced with 'CL:sth'
+UPDATE: Video: The non-Chinese characters are not vertically aligned when Guide's location is Above. This is fixed now, the non-Chinese characters are now vertically-aligned with Chinese characters
+UPDATE: Offline sentence miner (Android): It's now possible to select word that overlaps two words, e.g., 对面 的, tapping 面 will highlight 面的 together, then 面的 will be added to the dictionary
+FIX: Dictionary: When the dictionary hanzi's color setting is HSK-based and the hanzi is not in the list, it causes the dictionary not to display. This is fixed now, the dictionary now displays even if the character not in list
+
+8.24.84.3280:
+UPDATE: AI Assist: Information about a character can now be asked separately
+FIX: Dictionary: Some characters with component characters were indicated as base character. This is fixed now
+
+8.24.84.3272: FIX: Dictionary: There should be no apostrophe on zhuyin that starts with vowel letters
+
+8.24.84.3271: FIX: Dictionary: After the first syllable, there should be an apostrophe on pinyin that starts with vowel letters
+
+8.24.84.3270:
+UPDATE: Parallel Text: Can now translate the whole page, this can be done by double-clicking the parallel text icon
+UPDATE: Statistics: Words marked/unmarked as learned on pages are now automatically marked/unmarked in statistics too
+FIX: Page, Dictionary: Corrected tones and pinyin of words with numbers
+FIX: Settings: Selecting None for Guide should not uncheck the Exclude from guides unless the Line colors is also None. Likewise, selecting None for Line colors should not uncheck the Exclude from guides unless the Guide is also None
+
+8.24.84.3260: UPDATE: Dictionary: New words
+
+8.24.84.3251: FIX: Dictionary: The object of separable verb-object is not showing when dictionary's hanzi has no color or the dictionary's background is classic yellow. This is fixed now
+
+8.24.84.3250:
+UPDATE: Settings: Learner-preferred definitions now defaults to Vietnamese
+FIX: Video, Popup: When a size in the *Dual subtitles from translators* is selected in toolbar icon's popup settings, it should automatically make the second subtitle appear in the subtitles. This is fixed now, when a size is selected, it does not require the user to manually set the Duplicate Subtitles settings anymore
+
 8.24.84.3240:
 UPDATE: Settings: Change the example sentence where each succeeding words corresponds to next HSK level
 FIX: Sentence dictionary, PDF: Was not working on tagless text. This is fixed now
