@@ -1,6 +1,32 @@
 <div style="width: 80vw">
 
 <pre style='white-space: pre-wrap'>
+8.24.84.3370:
+UPDATE: Settings, Dictionary: When dictionary is displayed on a setting, the dictionary's background color now uses the background color that was chosen
+FIX: Page, Dictionary: Separable verbs was detected on characters that spans itemized (denoted by Chinese reverse comma: 、) words/phrases. These separated characters should not be detected as separable verbs. This is fixed now
+FIX: Page: Combinations of tone-colored hanzi + apply to guide only + exclude learned by word + line colors + some combination of guide, was causing the line to be displayed in the middle, making it look like an overstrike. This is fixed now
+FIX: Settings: When hovering on Chinese word, clicking the radio input first was required so that the dictionary will be displayed. This is fixed now, merely hovering on Chinese words will show the definition of Chinese word 
+FIX: Settings: When clicking on an input with Chinese text, the dictionary just gets stuck there. This is fixed now, the dictionary now follows where the mouse cursor is
+
+8.24.84.3363: 
+FIX: Video, Sentence dictionary: Dictionary's location is wrong when used on subtitles. This is fixed now
+FIX: Sentence dictionary: The sentence's height cannot be detected accurately when layout-preserving formatter was implemented. Accurate sentence's height is needed so that sentence dictionary can be repositioned to the top of the hovered sentence when the content of the dictionary cannot fit when at the bottom of the page. This is fixed now.
+
+8.24.84.3362: FIX: Video: Subtitles layout were incorrect on certain settings. This is fixed now
+
+8.24.84.3361:
+FIX: Page: Effecting simple modifications to text such as color, garden-path, and separable verbs indicators, the text's original layout was being affected, text justifications are destroyed, text are shifting etc. This is fixed now
+FIX: Dictionary: Some variants were not filtered out when *Show both traditional and simplified* is unchecked. This is fixed now, no more unrelated variants are shown when *Show both traditional and simplified* is unchecked
+
+8.24.84.3360: UPDATE: All: Added and replaced some icons on some UI
+
+8.24.84.3350: UPDATE: Dictionary: Emoji ↪️ on characters that are indirectly related to the character being looked up
+
+8.24.84.3340:
+UPDATE: Dictionary: All kind of variants are now linked to the words they are referring to. The referred words are now listed with their variants if they have any.
+FIX: Dictionary: Simplified words were shown with traditional variants. This is fixed now, simplified words are shown with simplified variants
+FIX: Popup menu: Cursors consistency
+
 8.24.84.3330:
 UPDATE: Dictionary: Variants was showing in simplified only, it is now showing in traditional too
 UPDATE: All: Made titles and icons consistent
