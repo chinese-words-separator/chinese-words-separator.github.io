@@ -1,6 +1,43 @@
 <div style="width: 80vw">
 
 <pre style='white-space: pre-wrap'>
+8.24.84.3420:
+UPDATE: Page, Dictionary: Removed surnames from hanzi's count of unique definitions, so that high frequency words (that can be surnames too) are not tagged as having many definitions. With this update, there are fewer words that are tagged as having many definitions, fewer pinyin are italicized or underlined. Here are just some of the high frequency words that are also surnames:  也 怕 左 时 红 从 皮 能 三 摇 罗 连 里 还 那 干 那 后 过 都 比 黑. This makes reading in pure pinyin (no hanzi) a lot more relaxing
+FIX: Page: Separable verb causes some compound words to split even if the verb and object are split across different phrases. This is fixed now
+
+FIX: Dictionary: Sorting was incorrect, e.g., 坐 , `zuò to sit` should appear before `Zuò surname`. This is fixed now
+FIX: Sentence dictionary: When in tagless mode, the keyboard shortcut 'w' produces empty phrase for context phrase when the highlighted is not the first phrase of the sentence. This is fixed now
+
+8.24.84.3414: FIX: Dictonary: Some variants were incorrectly tagged as indirectly related, when they should be directly related instead. This is fixed now
+
+8.24.84.3413:
+FIX: Dictionary: Sorting was incorrect, e.g., 坐 , `zuò to sit` should appear before `Zuò surname`. This is fixed now
+FIX: Sentence dictionary: When in tagless mode, the keyboard shortcut 'w' produces empty phrase for context phrase when the highlighted is not the first phrase of the sentence. This is fixed now
+
+8.24.84.3412: FIX: Dictionary: Was not working on further lookup when dictionary is positioned to the right side. This is fixed now
+
+8.24.84.3411: FIX: Page: Variants were indicated on page as another meaning for the word, hence many words were italicized. This is fixed now, variants are not counted as another meaning for the word
+
+8.24.84.3410:
+UPDATE: Settings, Page: Allow `Show unchecked guides after reading the definition`, and HSK checkboxes to be changed when `Word line colors` is `Hanzi colors` (previously Original)
+UPDATE: Dictionary: Calligraphy's bottom margin is now symmetrical to dictionary's top margin
+FIX: Page: When `Learn sound first` level is used, long line of text was not wrapping. This is fixed now
+FIX: Dictionary: Character other information was sometimes showing twice. This is fixed now
+FIX: Dictionary: The calligraphy animation was not showing on some sites. This is fixed now
+FIX: Dictionary: Some words, and popular variants were mislabelled as indirectly related. This is fixed now
+FIX: Dictionary: Was showing vertical ellipsis when the word is multiple characters. This is fixed now
+
+8.24.84.3401:
+FIX: Sentence dictionary: Was tagging word as indirectly related when it is a word that is looked up from variant normalization. This is fixed now
+FIX: Dictionary: Was tagging some words as indirectly related even when the word is directly related. This is fixed now
+
+8.24.84.3400:
+UPDATE: Dictionary: Checkbox's color now uses the color set in the settings for light and dark mode
+FIX: Page: Zhuyin that is displayed on the left side of hanzi was producing taller line height. This is fixed now, displaying zhuyin at either side (left or right) of the hanzi makes no difference on the line's height
+FIX: Dictionary: Even if a word has no definition, both the familiarity setter and learned checkbox was showing. This is fixed now, both are not shown when a word has no definition
+FIX: Dictionary: Some indirectly related words are not sorted last. This is fixed now, all indirectly related words are now sorted last
+FIX: Dictionary: The tooltip that shows the dictionary was showing even if the tapped word is inside the dictionary, it should not be shown. This is fixed now
+
 8.24.84.3390:
 UPDATE: Dictionary: Improved stemmer, so that more English words can be used to look up Chinese
 FIX: Sentence dictionary: When using English to Chinese lookup, a space character was matching some characters. This is fixed now
