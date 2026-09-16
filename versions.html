@@ -1,6 +1,14 @@
 <div style="width: 80vw">
 
 <pre style='white-space: pre-wrap'>
+8.24.84.3441:
+FIX: Page: Checked/unchecked HSKs were not effecting on word line colors when word line colors is of HSK or Familiarity. This is fixed now, checked/unchecked HSKs are now effecting on word line colors regardless of type of word line colors
+FIX: Page: When `Show unchecked guides after reading the definition` is unchecked and some HSKs are unchecked, hovering a word that belongs to unchecked HSKs was still showing its word line colors. This is fixed now, with the settings above, word line colors does not become visible anymore when hovered
+FIX: Page: Opacity was not effecting on word line colors on some combination of settings. This is fixed now, opacity is now always effecting on word line colors
+FIX: Dictionary: Some characters are base characters but they were decomposed graphically. This is fixed now,  characters decompositions should be by etymology only, not graphical
+FIX: Dictionary: Unhide definition shortcut was not working. This is fixed now
+FIX: Dictionary: Dynamically adding word sometimes makes the added word out of view. This is fixed now, the added word is now always visible
+
 8.24.84.3440:
 UPDATE: Recall, Respeak, Rewrite: Has now an option to choose an SRS algorithm: SM-2 or FSRS. This can be set in Settings
 FIX: Page: Some websites re-duplicates the text multiple times when they are replaced by CWS. This is fixed now, no more text re-duplications
