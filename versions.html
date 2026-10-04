@@ -1,6 +1,26 @@
 <div style="width: 80vw">
 
 <pre style='white-space: pre-wrap'>
+8.24.84.3480:
+OPTIMIZATION: SRS (Recall,Rewrite,Respeak): Cached the date formatter function
+FIX: Dictionary(mobile): When translation (Google/DeepL/Bing) is shown in the dictionary, the repositioning was not working correctly. This is fixed now
+FIX: Dictionary: On some sites, the dictionary was being animated. This is fixed now, the dictionary is not affected by animations anymore
+FIX: Dictionary: On some sites, the dictionary's font was adapting the site's font. This is fixed now, the dictionary's font is now consistent across sites
+
+8.24.84.3471:
+FIX: Video: When using a combination of guide: zhuyin + `zhuyin at side` is checked, or using the guide of tone marks, the non-Chinese words in subtitles were vertically misaligned. This is fixed now
+FIX: Video: The `Hanzi size` was not effecting immediately on non-Chinese words in the subtitles. This is fixed now
+FIX: Video: When subtitle have no guide, some syllables have differing heights with each other. This is fixed now
+
+8.24.84.3470:
+UPDATE: Dictionary: Improved character decomposition
+UPDATE: Dictionary: Improved character other info's ideographic hint
+FIX: Page: On some sites, the text's vertical alignment was affected. This is fixed now
+FIX: Page: On some sites, the text in `pre` tag was rendered in one line only with this combo: Guide: None, Tone + Word line colors. This is fixed now
+FIX: Dictionary search: On some sites, the translators icons were outside the translator buttons. This is fixed now
+FIX: Dictionary search: On some sites, the handwriting and microphone icons were oversized. This is fixed now
+FIX: Popup (Guide setting): When Guide is unchecked and `Word line colors` is used, the word line colors was effecting on hovered word. This is fixed now, the word line colors is not anymore shown on hovered word when Guide is unchecked
+
 8.24.84.3460:
 UPDATE: Dictionary: Showing non-visible guide is now also working when navigating via keyboard shortcuts: 'a', 'A'
 FIX: Page, Video(subtitles): On some sites, when guide is tone marks, the characters vertical alignment was misaligned. This is fixed now
